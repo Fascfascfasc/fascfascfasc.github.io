@@ -1,0 +1,176 @@
+// out: ../css/style.css, sourcemap: true, compress: false
+
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,400,500';
+
+@import "../less/grid.less";
+
+
+// Базовые стили
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: @base-color;
+  font: 14px Raleway, sans;
+  animation: all .8s  ease-in-out;
+}
+
+.minus {
+  background:
+    lighten(
+      (spin(darken(@base-color, 50), 90)), 35);
+}
+
+.list__item {
+  float: left;
+  list-style: none;
+  text-transform: uppercase;
+}
+
+.link {
+  display: inline-block;
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 5px;
+  &:hover  {
+    cursor: pointer;
+    // .link {
+      border-bottom: 1px solid white;
+    // }
+  }
+}
+
+
+// Хедер
+
+.page__header {
+  background: #656d78;
+}
+
+.header {
+  padding: 20px;
+}
+
+.logo {
+  height: 60px;
+  display: block;
+  background: url("../img/logo.png") no-repeat;
+}
+
+.header__nav {
+  overflow: hidden;
+  list-style: none;
+  text-align: right;
+  padding-top: 2px;
+}
+
+.nav__item {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 100;
+  line-height: 59px;
+  letter-spacing: 0.2px;
+  margin: 0 25px;
+  .link {
+    text-transform: uppercase;
+  }
+  // &:hover  {
+  //   cursor: pointer;
+  //   .link {
+  //     border-bottom: 1px solid white;
+  //   }
+  // }
+}
+
+.header__title {
+  display: block;
+  margin-bottom: 16px;
+  padding: 27px 0;
+  color: #FFFFFF;
+  font-size: 44px;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.page-header__bread {
+  margin-left: 50%;
+  height: 30px;
+}
+
+.bread__list {
+  margin-left: 30px;
+}
+
+.bread__box {
+  margin-right: 15px;
+}
+
+.bread {
+  display: inline-block;
+  padding: 0;
+}
+
+.bread::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  background: url(../img/arrow_r.png) no-repeat center 5px;
+}
+
+.bread:last-child > .bread:::after {
+  display: none;
+}
+
+// Заголовки
+
+.h-headers {
+}
+
+.h-headers__block {
+  height: 80px;
+}
+
+h1 {
+  font-size: 38px;
+}
+
+.blockquotes {
+  & .cell-1-1 {
+    text-align: center;
+  }
+}
+
+.blockquote__block {
+  height: 100px;
+}
+
+
+.dropcaps {
+  & .cell-1-1 {
+    text-align: center;
+  }
+  & .cell-1-2 {
+    height: 100px;
+  }
+}
+
+
+.columns {
+}
+
+.page-footer {
+  background: #303030;
+}
+
+
+
+
+
+.left-to-right {
+
+}
