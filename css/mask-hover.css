@@ -10,14 +10,15 @@ section {
   display: block;
 }
 .one {
-  background-color: #000;
+  background-color: #161616;
+  padding: 80px 0;
 }
 .shape {
   position: relative;
   box-sizing: border-box;
   padding: 20px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 40px;
   width: 300px;
   height: 300px;
   border-radius: 10px;
