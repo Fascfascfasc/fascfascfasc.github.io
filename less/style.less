@@ -9,8 +9,17 @@ body {
 .section {
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
+}
+
+#section1 {
   background: url("https://raw.githubusercontent.com/Fascfascfasc/clair/master/img/bg_1.jpg") no-repeat 50% fixed;
   background-size: cover;
+}
+
+#section2 {
+  background: url("https://image.freepik.com/free-vector/music-seamless-pattern-abstract-background_82147503365.jpg") repeat;
+  // background: url("https://images.blogthings.com/thejapanesepatterntest/button.png") repeat 50% fixed;
 }
 
 .sidebar {
@@ -19,11 +28,10 @@ body {
   box-sizing: border-box;
   height: 100vh;
   width: 400px;
-  padding: 10px;
   z-index: 10;
   background: url("https://raw.githubusercontent.com/Fascfascfasc/clair/master/img/bg_1.jpg") no-repeat 50% fixed;
   background-size: cover;
-  border-right: 2px dotted #4f4f4f;
+  border-right: 1px solid rgba(255,255,255,0.4);
 }
 
 .sidebar::before {
@@ -31,11 +39,15 @@ body {
   position: absolute;
   background: inherit;
   top: 0;
-  left: 0;
-  right: 0;
+  left: -100px;
+  right: -100px;
   bottom: 0;
-  -webkit-filter: blur(6px);
-  filter: blur(6px);
+  filter: blur(5px);
+}
+
+#section2 .sidebar {
+  background: inherit;
+  background-image: url("https://image.freepik.com/free-vector/music-seamless-pattern-abstract-background_82147503365.jpg");
 }
 
 .sidebar-title {
