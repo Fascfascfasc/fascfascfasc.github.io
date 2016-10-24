@@ -1,10 +1,16 @@
 // out: ../css/style.css, sourcemap: false, compress: false
 
+
+
 // Базовые стили
 
 body {
   font-family: Helvetica, Arial, sans;
 }
+
+
+
+// Секции
 
 .section {
   width: 100%;
@@ -13,41 +19,45 @@ body {
 }
 
 #section1 {
-  background: url("https://raw.githubusercontent.com/Fascfascfasc/clair/master/img/bg_1.jpg") no-repeat 50% fixed;
+  background: url("../img/bg_0.jpg") no-repeat 50% fixed;
   background-size: cover;
 }
 
 #section2 {
   background: url("https://image.freepik.com/free-vector/music-seamless-pattern-abstract-background_82147503365.jpg") repeat;
-  // background: url("https://images.blogthings.com/thejapanesepatterntest/button.png") repeat 50% fixed;
 }
+
+
+
+// Сайдбар
 
 .sidebar {
   position: relative;
-  overflow: hidden;
   box-sizing: border-box;
   height: 100vh;
   width: 400px;
-  z-index: 10;
-  background: url("https://raw.githubusercontent.com/Fascfascfasc/clair/master/img/bg_1.jpg") no-repeat 50% fixed;
+  padding: 0 48px;
+  overflow: hidden;
+  background: url("../img/bg_0.jpg") no-repeat 50% fixed;
   background-size: cover;
-  border-right: 1px solid rgba(255,255,255,0.4);
+  z-index: 10;
+}
+
+#section2 .sidebar {
+  background: url("https://image.freepik.com/free-vector/music-seamless-pattern-abstract-background_82147503365.jpg") no-repeat 50% fixed;
+  background-size: cover;
 }
 
 .sidebar::before {
   content: '';
   position: absolute;
   background: inherit;
-  top: 0;
-  left: -100px;
-  right: -100px;
-  bottom: 0;
-  filter: blur(5px);
-}
-
-#section2 .sidebar {
-  background: inherit;
-  background-image: url("https://image.freepik.com/free-vector/music-seamless-pattern-abstract-background_82147503365.jpg");
+  box-sizing: inherit;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  filter: blur(8px);
 }
 
 .sidebar-title {
@@ -55,4 +65,41 @@ body {
   color: #ffffff;
   padding-top: 100px;
   text-align: center;
+}
+
+
+
+// Логотип
+
+.logo {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 43px;
+  margin-top: 40px;
+  fill: #ffffff;
+  // top: 2px;
+  // left: -37px;
+}
+
+
+
+// Кнопка услуги
+
+.next-page-icon {
+  position: absolute;
+  bottom: 0;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+
+.next-page-icon::before {
+  content: '';
+  position: absolute;
+  width: 22px;
+  height: 11px;
+  top: 2px;
+  left: -37px;
+  background: url("../img/arrow_down.png") 0 0 no-repeat;
 }
