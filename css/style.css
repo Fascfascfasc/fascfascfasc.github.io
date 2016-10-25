@@ -11,7 +11,9 @@ body {
   background-size: cover;
 }
 #section2 {
-  background: url("https://image.freepik.com/free-vector/music-seamless-pattern-abstract-background_82147503365.jpg") repeat;
+  background: url("../img/bg_1.jpg") no-repeat 50% 0;
+  background-size: cover;
+  background-color: #f2f2f2;
 }
 .sidebar {
   position: relative;
@@ -20,30 +22,66 @@ body {
   width: 400px;
   padding: 0 48px;
   overflow: hidden;
+}
+.sidebar--first {
   background: url("../img/bg_0.jpg") no-repeat 50% fixed;
   background-size: cover;
   z-index: 10;
 }
-#section2 .sidebar {
-  background: url("https://image.freepik.com/free-vector/music-seamless-pattern-abstract-background_82147503365.jpg") no-repeat 50% fixed;
-  background-size: cover;
-}
-.sidebar::before {
+.sidebar--first::before {
   content: '';
   position: absolute;
-  background: inherit;
-  box-sizing: inherit;
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
+  background: url("../img/bg_0.jpg") no-repeat 50% fixed;
+  background-size: cover;
+  box-sizing: border-box;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
+  filter: blur(8px);
+}
+.sidebar--second {
+  background: url("../img/bg_1.jpg") no-repeat 50%;
+  background-size: cover;
+  z-index: 10;
+}
+.sidebar--second .logo_svg {
+  fill: #0f1f1f;
+}
+.sidebar--second .sidebar-title {
+  color: #0f1f1f;
+}
+.sidebar--second .menu-icon__part {
+  background-color: #0f1f1f;
+}
+.sidebar--second .next-page-icon {
+  color: #0f1f1f;
+}
+.sidebar--second::before {
+  content: '';
+  position: absolute;
+  background: url("../img/bg_1.jpg") no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+  top: -50px;
+  left: -50px;
+  right: -50px;
+  bottom: -50px;
   filter: blur(8px);
 }
 .sidebar-title {
   position: relative;
   color: #ffffff;
-  padding-top: 100px;
-  text-align: center;
+  padding-top: 200px;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: lighter;
+}
+.sidebar-title span {
+  display: block;
+  margin-bottom: 25px;
+}
+.sidebar-title span:nth-child(2) {
+  font-size: 36px;
 }
 .logo {
   position: relative;
@@ -51,14 +89,49 @@ body {
   width: 115px;
   height: 43px;
   margin-top: 40px;
+}
+.logo:hover .logo_svg {
+  fill: #3fff8c;
+  transition: fill 0.35s ease-in-out;
+}
+.logo_svg {
   fill: #ffffff;
+  transition: fill 0.35s ease-in-out;
+}
+.menu-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 50px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+.menu-icon:hover .menu-icon__part {
+  background-color: #3fff8c;
+  transition: background-color 0.35s ease-in-out;
+}
+.menu-icon__part {
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 2px;
+  margin-bottom: 8px;
+  background-color: #ffffff;
+  transition: background-color 0.35s ease-in-out;
 }
 .next-page-icon {
   position: absolute;
+  display: block;
   bottom: 0;
   margin-left: 40px;
   margin-bottom: 50px;
+  text-decoration: none;
   color: #ffffff;
+  transition: color 0.35s ease-in-out;
+}
+.next-page-icon:hover {
+  color: #3fff8c;
+  transition: color 0.35s ease-in-out;
 }
 .next-page-icon::before {
   content: '';
@@ -68,4 +141,31 @@ body {
   top: 2px;
   left: -37px;
   background: url("../img/arrow_down.png") 0 0 no-repeat;
+}
+.contact-form-button {
+  display: block;
+  position: absolute;
+  box-sizing: border-box;
+  width: 200px;
+  height: 45px;
+  right: 0;
+  margin-top: 30px;
+  margin-right: 48px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 45px;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #0f1f1f;
+  transition: background-color 0.35s ease-in-out;
+}
+.contact-form-button:hover {
+  color: #0f1f1f;
+  background-color: #3fff8c;
+  transition: background-color 0.35s ease-in-out;
+}
+.contact-form-button:active {
+  color: #142929;
+  background-color: #00d857;
+  box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
 }
