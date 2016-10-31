@@ -1,74 +1,45 @@
-// out: ../css/style.css, sourcemap: false, compress: false
-
-
-// Импорт из less
-
-@import "./2 grid.less";
-@import "./3 section 1 first screen.less";
-// @import "./4 section 2 about.less";
-// @import "./5 section 3 projects.less";
-// @import "./6 section 4 contact.less";
-// @import "./7 menu.less";
-// @import "./8 contact pop-up.less";
-
-
-
-
-// Базовые стили
 
 body {
   font-family: Helvetica, Arial, sans;
 }
 
 
-
-// Секции
-
-// .section {
-//   width: 100%;
-//   min-height: 100vh;
-//   overflow: hidden;
-// }
-
-// #section1 {
-//   background: url("../img/bg_0.jpg") no-repeat 50% fixed;
-//   background-size: cover;
-// }
-//
-// #section2 {
-//   background: url("../img/bg_1.jpg") no-repeat 50% 0;
-//   background-size: cover;
-//   background-color: #f2f2f2;
-// }
+.section {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  overflow: hidden;
+}
 
 
+.sidebar {
+  position: relative;
+  box-sizing: border-box;
+  overflow: hidden;
+  height: 100vh;
+  width: 400px;
+  padding: 0 48px;
+}
 
 
+.logo {
+  position: relative;
+  display: block;
+  width: 115px;
+  height: 43px;
+  margin-top: 40px;
+  &:hover .logo_svg {
+    fill: @green;
+    // .transition;
+  }
+}
+
+.logo_svg {
+  fill: @white;
+  // .transition;
+}
 
 
-// Логотип
-//
-// .logo {
-//   position: relative;
-//   display: block;
-//   width: 115px;
-//   height: 43px;
-//   margin-top: 40px;
-//   &:hover .logo_svg {
-//     fill: @green;
-//     transition: fill @time;
-//   }
-// }
-//
-// .logo_svg {
-//   fill: @white;
-//   transition: fill @time;
-// }
-//
-
-
-// Меню
-//
 // .menu-icon {
 //   position: absolute;
 //   top: 0;
@@ -81,7 +52,8 @@ body {
 //     transition: background-color @time;
 //   }
 // }
-//
+
+
 // .menu-icon__part {
 //   display: block;
 //   position: relative;
@@ -94,8 +66,6 @@ body {
 //
 
 
-// Кнопка услуги
-//
 // .next-page-icon {
 //   position: absolute;
 //   display: block;
@@ -110,7 +80,9 @@ body {
 //     transition: color @time;
 //   }
 // }
-//
+
+
+
 // .next-page-icon::before {
 //   content: '';
 //   position: absolute;
@@ -122,9 +94,6 @@ body {
 // }
 
 
-
-// Форма обратной связи
-//
 // .contact-form-button {
 //   display: block;
 //   position: absolute;

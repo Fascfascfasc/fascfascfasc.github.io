@@ -1,0 +1,8 @@
+body {
+  font-family: Helvetica, Arial, sans;
+}
+.section {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
