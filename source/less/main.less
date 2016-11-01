@@ -1,6 +1,28 @@
 
+
+@font-face {
+  font-family: 'ProximaNovaSemibold';
+  src: url('../fonts/ProximaNovaSemibold.otf');
+}
+@font-face {
+  font-family: 'ProximaNovaBold';
+  src: url('../fonts/ProximaNovaBold.otf');
+}
+@font-face {
+  font-family: 'PT Serif', serif;
+  src: url('https://fonts.googleapis.com/css?family=PT+Serif');
+ }
+
+
 body {
   font-family: Helvetica, Arial, sans;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+.clearfix {
+  content: '.';
+  clear: both;
 }
 
 
@@ -16,11 +38,12 @@ body {
 
 .sidebar {
   position: relative;
+  float: left;
   box-sizing: border-box;
   overflow: hidden;
-  height: 100vh;
-  width: 400px;
-  padding: 0 48px;
+  min-height: 100vh;
+  width: 500px;
+  padding: 0 30px 0 48px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50%;
@@ -35,108 +58,141 @@ body {
     left: 0px;
     right: 0px;
     bottom: 0px;
-    filter: blur(6px);
+    filter: blur(10px);
   }
 }
 
 
 .logo {
   position: relative;
+  float: left;
   display: block;
   width: 115px;
   height: 43px;
   margin-top: 40px;
+  cursor: pointer;
+  .logo_svg {
+    fill: @white;
+    transition-property: fill;
+    .transition;
+  }
   &:hover .logo_svg {
     fill: @green;
-    // .transition;
+    .transition;
   }
 }
 
-.logo_svg {
-  fill: @white;
-  // .transition;
+
+.menu-icon {
+  position: relative;
+  display: block;
+  float: right;
+  margin-top: 45px;
+  cursor: pointer;
+  .menu-icon__part {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    margin-bottom: 8px;
+    background-color: @white;
+    transition-property: background-color;
+    .transition;
+  }
+  &:hover .menu-icon__part {
+    background-color: @green;
+    transition-property: background-color;
+    .transition;
+  }
 }
 
 
-// .menu-icon {
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   margin-top: 50px;
-//   margin-right: 30px;
-//   cursor: pointer;
-//   &:hover .menu-icon__part {
-//     background-color: @green;
-//     transition: background-color @time;
-//   }
-// }
+.sidebar-title {
+  position: relative;
+  float: left;
+  padding-top: 100px;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'PT Serif', serif;
+  color: @white;
+  & .normal-header {
+    display: block;
+    font-size: 17px;
+    line-height: 20px;
+  }
+  & .huge-header {
+    display: block;
+    margin-top: 20px;
+    font-family: 'ProximaNovaSemibold', sans-serif;
+    font-size: 72px;
+    line-height: 70px;
+    letter-spacing: -1px;
+  }
+}
 
 
-// .menu-icon__part {
-//   display: block;
-//   position: relative;
-//   width: 30px;
-//   height: 2px;
-//   margin-bottom: 8px;
-//   background-color: @white;
-//   transition: background-color @time;
-// }
-//
+.next-page-icon {
+  position: relative;
+  float:left;
+  margin: 50px 0 50px 40px;
+  text-transform: uppercase;
+  color: @white;
+  transition-property: color;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-family: 'ProximaNovaBold';
+  font-size: 12px;
+  .transition;
+  &::before {
+    content: '';
+    position: absolute;
+    width: 22px;
+    height: 11px;
+    top: 2px;
+    left: -37px;
+    background: url("../img/arrow_down.png") 0 0 no-repeat;
+    transition-property: background-color;
+    .transition;
+  }
+  &:hover {
+    color: @green;
+    transition-property: color;
+    .transition;
+    &::before {
+      background-color: @green;
+      transition-property: background-color;
+      .transition;
+    }
+  }
+}
 
 
-// .next-page-icon {
-//   position: absolute;
-//   display: block;
-//   bottom: 0;
-//   margin-left: 40px;
-//   margin-bottom: 50px;
-//   text-decoration: none;
-//   color: @white;
-//   transition: color @time;
-//   &:hover {
-//     color: @green;
-//     transition: color @time;
-//   }
-// }
-
-
-
-// .next-page-icon::before {
-//   content: '';
-//   position: absolute;
-//   width: 22px;
-//   height: 11px;
-//   top: 2px;
-//   left: -37px;
-//   background: url("../img/arrow_down.png") 0 0 no-repeat;
-// }
-
-
-// .contact-form-button {
-//   display: block;
-//   position: absolute;
-//   box-sizing: border-box;
-//   width: 200px;
-//   height: 45px;
-//   // top: 0;
-//   right: 0;
-//   margin-top: 30px;
-//   margin-right: 48px;
-//   color: @white;
-//   text-align: center;
-//   line-height: 45px;
-//   border-radius: 2px;
-//   cursor: pointer;
-//   background-color: @black;
-//   transition: background-color @time;
-//   &:hover {
-//     color: @black;
-//     background-color: @green;
-//     transition: background-color @time;
-//   }
-//   &:active {
-//     color: lighten(@black, 3%);
-//     background-color: darken(@green, 20%);
-//     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
-//   }
-// }
+.contact-form-button {
+  display: block;
+  float: right;
+  box-sizing: border-box;
+  width: 200px;
+  height: 45px;;
+  margin-top: 30px;
+  margin-right: 48px;
+  text-align: center;
+  line-height: 45px;
+  text-transform: uppercase;
+  border-radius: 2px;
+  cursor: pointer;
+  color: @white;
+  background-color: @black;
+  transition-property: color background-color;
+  .transition;
+  &:hover {
+    color: @black;
+    background-color: @green;
+    transition-property: color background-color;
+    .transition;
+  }
+  &:active {
+    color: lighten(@black, 3%);
+    background-color: darken(@green, 20%);
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+  }
+}
