@@ -363,6 +363,20 @@ body {
   background-color: #00d857;
   box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
 }
+.features {
+  float: right;
+}
+.feature {
+  float: left;
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  color: #0f1f1f;
+}
+.feature .feature-img {
+  width: 50px;
+  height: 50px;
+}
 .section__a {
   background-image: url(../img/bg_0.jpg);
 }
@@ -374,4 +388,30 @@ body {
 }
 .sidebar__b {
   background-image: url(../img/bg_1.jpg);
+}
+.section__c {
+  background-color: #b2b2b2;
+}
+.sidebar__c {
+  background-color: #ffffff;
+  border: 1px solid #ff0000;
+}
+.sidebar__c .logo_svg {
+  fill: #0f1f1f;
+}
+.sidebar__c .menu-icon__part {
+  background-color: #0f1f1f;
+}
+.sidebar__c .sidebar-title {
+  color: #0f1f1f;
+}
+.sidebar__c .sidebar-title .huge-header {
+  font-size: 32px;
+  line-height: 36px;
+}
+.sidebar__c .next-page-icon {
+  color: #0f1f1f;
+}
+.sidebar__c .next-page-icon::before {
+  background-color: #0f1f1f;
 }
