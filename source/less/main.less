@@ -39,17 +39,17 @@ body {
 .sidebar {
   position: relative;
   float: left;
-  box-sizing: border-box;
   overflow: hidden;
-  min-height: 100vh;
   width: 500px;
+  min-height: 100vh;
+  box-sizing: border-box;
   padding: 0 30px 0 48px;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50%;
   background-size: cover;
   z-index: 10;
-  &::before {
+  & .sidebar-filter {
     content: '';
     position: absolute;
     box-sizing: inherit;
@@ -59,14 +59,40 @@ body {
     right: 0px;
     bottom: 0px;
     filter: blur(10px);
+    z-index: -10;
   }
+}
+
+
+.sidebar__header,
+.sidebar__footer {
+  position: absolute;
+  display: block;
+  left: 48px;
+  right: 30px;
+}
+
+
+.sidebar__header {
+  top: 0;
+}
+
+
+.sidebar__main {
+  display: table;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+.sidebar__footer {
+  bottom: 0;
 }
 
 
 .logo {
   position: relative;
   float: left;
-  display: block;
   width: 115px;
   height: 43px;
   margin-top: 40px;
@@ -84,8 +110,6 @@ body {
 
 
 .menu-icon {
-  position: relative;
-  display: block;
   float: right;
   margin-top: 45px;
   cursor: pointer;
@@ -107,11 +131,8 @@ body {
 }
 
 
-.sidebar-title {
-  position: relative;
-  float: left;
-  padding-top: 100px;
-  display: inline-block;
+.sidebar__main-text {
+  display: table-cell;
   vertical-align: middle;
   font-family: 'PT Serif', serif;
   color: @white;
@@ -201,6 +222,7 @@ body {
 .features {
   float: right;
 }
+
 
 .feature {
   float: left;
