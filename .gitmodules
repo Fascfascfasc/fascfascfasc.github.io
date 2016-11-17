@@ -1,0 +1,9 @@
+[submodule "clair"]
+	path = clair
+	url = https://github.com/Fascfascfasc/clair
+[submodule "solution-p"]
+	path = solution-p
+	url = https://github.com/Fascfascfasc/solution-p
+[submodule "fascfascfasc"]
+	path = fascfascfasc
+	url = https://github.com/Fascfascfasc/fascfascfasc
