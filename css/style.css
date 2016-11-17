@@ -213,6 +213,7 @@ body {
   float: left;
   overflow: hidden;
   width: 500px;
+  width: 25%;
   min-height: 100vh;
   box-sizing: border-box;
   padding: 0 30px 0 48px;
@@ -452,9 +453,9 @@ body {
 .sidebar_c .icon_next-page::before {
   background-color: #0f1f1f;
 }
-.sidebar_c .icon_next-page:hover {
+.sidebar_c:hover {
   color: #3fff8c;
 }
-.sidebar_c .icon_next-page:hover::before {
+.sidebar_c:hover::before {
   background-color: #3fff8c;
 }
