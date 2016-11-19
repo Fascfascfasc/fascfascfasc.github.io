@@ -90,7 +90,7 @@
 
     // Default options for iScroll.js used when using scrollOverflow
     var iscrollOptions = {
-        scrollbars: true,
+        scrollbars: false,
         mouseWheel: true,
         hideScrollbars: false,
         fadeScrollbars: false,
@@ -125,7 +125,7 @@
 
             //scrolling
             css3: true,
-            scrollingSpeed: 1000,
+            // scrollingSpeed: 1000,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,
@@ -133,7 +133,7 @@
             easingcss3: 'ease',
             loopBottom: false,
             loopTop: false,
-            loopHorizontal: true,
+            loopHorizontal: false,
             continuousVertical: false,
             continuousHorizontal: true,
             scrollHorizontally: true,
@@ -155,7 +155,7 @@
 
             //design
             controlArrows: true,
-            controlArrowColor: '#fff',
+            controlArrowColor: '#f00',
             verticalCentered: true,
             sectionsColor : [],
             paddingTop: 0,
