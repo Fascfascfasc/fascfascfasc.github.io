@@ -7,79 +7,14 @@
 	<meta name="title" content="Solution P"/>
 	<meta name="description" content="Solution P">
 	<meta name="author" content="fascfascfasc.github.io" />
+
 	<link rel="icon" type="image/png" href="./img/favicon.ico" />
 	<link rel="icon" type="image/png" href="./img/favicon-32x32.png" sizes="32x32" />
 	<link rel="icon" type="image/png" href="./img/favicon-16x16.png" sizes="16x16" />
-	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/apple-touch-icon-152x152.png" />
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="./img/apple-touch-icon-152x152.png"/>
 
-	<!-- Стили -->
-	<!-- <link rel="stylesheet" type="text/css" href="./css/style.css"/> -->
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
 	<link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css"/>
-
-	<style>
-		* {
-			margin: 0;
-			padding: 0;
-		}
-		.header {
-			position: absolute;
-		}
-		.header,
-		.section {
-			background: url('./img/crossword.png') repeat;
-		}
-		.logo {
-			position: relative;
-			z-index: 1000;
-		}
-		.logo__img {
-			width: 200px;
-		}
-		.main-nav {
-			position: relative;
-			height: 100px;
-		}
-		.main-nav__list {
-			position: relative;
-			z-index: 1000;
-		}
-		.main-nav__list .main-nav__item {
-			list-style: none;
-			float: left;
-			margin-right: 20px;
-		}
-		.slide {
-			float: left;
-		}
-		.slide__btns{
-			width: 800px;
-			margin: 0 auto;
-		}
-		.slide__btn {
-			float: left;
-			width: 200px;
-			padding: 10px;
-			margin-right: 15px;
-			color: #fff;
-			text-align: center;
-			background-color: #2cb9db;
-			cursor: pointer;
-			border-radius: 2px;
-		}
-		.slide__btn_contact {
-			float: none;
-			margin: 0 auto;
-		}
-		.slide__btn_next {
-			float: right;
-		}
-		#fp-nav ul li a.active span,
-		.fp-slidesNav ul li a.active span,
-		#fp-nav ul li:hover a.active span,
-		.fp-slidesNav ul li:hover a.active span {
-			color: #2cb9db;
-		}
-	</style>
 
 	<!--[if IE 9]>
 	<script>
@@ -88,6 +23,161 @@
 		});
 	</script>
 	<![endif]-->
+
+	<style>
+
+	    blockquote,
+	    body,
+	    dd,
+	    div,
+	    dl,
+	    dt,
+	    fieldset,
+	    form,
+	    h1,
+	    h2,
+	    h3,
+	    h4,
+	    h5,
+	    h6,
+	    input,
+	    li,
+	    ol,
+	    p,
+	    pre,
+	    td,
+	    textarea,
+	    th,
+	    ul {
+	        margin: 0;
+	        padding: 0
+	    }
+
+	    #fullPage-nav li a,
+	    #menu li a,
+	    a {
+	        text-decoration: none
+	    }
+
+	    .section {
+	        position: relative
+	    }
+
+	    table {
+	        border-spacing: 0
+	    }
+
+	    ol,
+	    ul {
+	        list-style: none
+	    }
+
+	    body,
+	    html {
+	        overflow: hidden
+	    }
+
+	    #fullpage,
+	    .section,
+	    body,
+	    html {
+	        height: 100%
+	    }
+
+	    .section {
+	        text-align: center
+	    }
+
+	    #menu li {
+	        display: inline-block;
+	        margin: 10px;
+	        color: #000;
+	        background: #fff;
+	        background: rgba(255, 255, 255, .5);
+	        -webkit-border-radius: 10px;
+	        border-radius: 10px
+	    }
+
+	    #menu li.active {
+	        background: #666;
+	        background: rgba(0, 0, 0, .5);
+	        color: #fff
+	    }
+
+	    #menu li a,
+	    #menu li.active a:hover {
+	        color: #000
+	    }
+
+	    #menu li.active a {
+	        color: #fff
+	    }
+
+	    #menu li:hover {
+	        background: rgba(255, 255, 255, .8)
+	    }
+
+	    #menu li a,
+	    #menu li.active a {
+	        padding: 9px 18px;
+	        display: block
+	    }
+
+	    #menu {
+	        position: fixed;
+	        padding: 0
+	        top: 0;
+	        left: 0;
+	        height: 40px;
+	        z-index: 70;
+	        width: 100%;
+	        margin: 0
+	    }
+
+	    #fullPage-nav {
+	        position: absolute;
+	        z-index: 100;
+	        margin-top: -32px;
+	        top: 50%;
+	        opacity: 1
+	    }
+
+	    #fullPage-nav li {
+	        display: block;
+	        width: 14px;
+	        height: 13px;
+	        margin: 7px
+	    }
+
+	    #fullPage-nav li a {
+	        display: block;
+	        position: relative;
+	        z-index: 1;
+	        width: 100%;
+	        height: 100%;
+	        cursor: pointer
+	    }
+
+	    #fullPage-nav li .active span {
+	        background: #333
+	    }
+
+	    #fullPage-nav span {
+	        top: 2px;
+	        left: 2px;
+	        width: 8px;
+	        height: 8px;
+	        border: 1px solid #000;
+	        background: rgba(0, 0, 0, 0);
+	        -webkit-border-radius: 50%;
+	        -moz-border-radius: 50%;
+	        border-radius: 50%;
+	        position: absolute;
+	        z-index: 1
+	    }
+
+	</style>
+
 </head>
 <body>
 
@@ -97,43 +187,37 @@
 
 		<div class="header__inner">
 
-			<a href="#intro" class="logo" data-menuanchor="#intro">
+			<a href="#intro" class="logo" data-menuanchor="intro">
 				<img src="./img/logo.png" alt="Solution-P logotype" class="logo__img">
 			</a>
 
-			<nav id="main-nav" class="main-nav">
+			<ul id="menu" class="menu">
 
-				<ul class="main-nav__list">
+				<li class="menu__item active" data-menuanchor="services">
+					<a href="#services" class="menu__link">Услуги</a>
+				</li>
 
-					<li class="main-nav__item">
-						<a href="#services" class="main-nav__link" data-menuanchor="services">Услуги</a>
-					</li>
+				<li class="menu__item" data-menuanchor="projects">
+					<a href="#projects" class="menu__link">Проекты</a>
+				</li>
 
-					<li class="main-nav__item">
-						<a href="#projects" class="main-nav__link" data-menuanchor="projects">Проекты</a>
-					</li>
+				<li class="menu__item" data-menuanchor="clients">
+					<a href="#clients" class="menu__link">Клиенты</a>
+				</li>
 
-					<li class="main-nav__item">
-						<a href="#clients" class="main-nav__link" data-menuanchor="clients">Клиенты</a>
-					</li>
+				<li class="menu__item" data-menuanchor="partners">
+					<a href="#partners" class="menu__link">Партнеры</a>
+				</li>
 
-					<li class="main-nav__item">
-						<a href="#partners" class="main-nav__link" data-menuanchor="partners">Партнеры</a>
-					</li>
+				<li class="menu__item" data-menuanchor="contacts">
+					<a href="#contacts" class="menu__link">Контакты</a>
+				</li>
 
-					<li class="main-nav__item">
-						<a href="#contacts" class="main-nav__link" data-menuanchor="contacts">Контакты</a>
-					</li>
-
-				</ul>
-
-			</nav>
+			</ul>
 
 		</div>
 
 		<button class="main-nav__btn btn"><i></i><i></i><i></i></button>
-
-		<div class="nav-bar"></div>
 
 	</header>
 
@@ -142,7 +226,7 @@
 		<div id="fullpage">
 
 			<!-- Интро -->
-			<div class="section section_intro" data-anchor="intro">
+			<div id="section1" class="section section_intro ">
 
 				<div class="intro__text"> <!-- ОК? -->
 					<p>
@@ -155,9 +239,9 @@
 			</div>
 
 			<!-- Услуги -->
-			<div class="section section_services" data-anchor="services">
+			<div id="section2" class="section section_services">
 
-				<div id="slide1" class="slide slide_intro" data-anchor="slide1">
+				<div id="slide1" class="slide slide_intro">
 
 					<div class="slide__header">
 						<h3>Наши услуги</h3>
@@ -204,7 +288,7 @@
 
 				</div>
 
-				<div id="slide2" class="slide slide_production" data-anchor="slide2">
+				<div id="slide2" class="slide slide_production">
 
 					<div class="slide__header">
 						<h3>Production</h3>
@@ -247,7 +331,7 @@
 
 				</div>
 
-				<div id="slide3" class="slide slide_event" data-anchor="slide3">
+				<div id="slide3" class="slide slide_event">
 
 					<div class="slide__header">
 						<h3>Event</h3>
@@ -290,7 +374,7 @@
 
 				</div>
 
-				<div id="slide4" class="slide slide_creative" data-anchor="slide4">
+				<div id="slide4" class="slide slide_creative">
 
 					<div class="slide__header">
 						<h3>Creative</h3>
@@ -334,7 +418,7 @@
 
 				</div>
 
-				<div id="slide5" class="slide slide_digital" data-anchor="slide5">
+				<div id="slide5" class="slide slide_digital">
 
 					<div class="slide__header">
 						<h3>Digital</h3>
@@ -376,32 +460,36 @@
 			</div>
 
 			<!-- Проекты -->
-			<div class="section section_projects" data-anchor="projects">
+			<div id="section3" class="section section_projects">
 				<div class="">
 					<h2>Проекты</h2>
 				</div>
 			</div>
 
 			<!-- Клиенты -->
-			<div class="section section_clients" data-anchor="clients">
+			<div id="section4" class="section section_clients">
 					<div class="">
 						<h2>Клиенты</h2>
 					</div>
 				</div>
 
 			<!-- Партнеры -->
-			<div class="section section_partners" data-anchor="partners">
+			<div id="section5" class="section section_partners">
 					<div class="">
 						<h2>Партнеры</h2>
 					</div>
 				</div>
 
 			<!-- Контакты -->
-			<div class="section section_contacts" data-anchor="contacts">
-					<div class="">
-						<h2>Контакты</h2>
-					</div>
+			<div id="section6" class="section section_contacts">
+
+				<div class="">
+					<h2>Контакты</h2>
 				</div>
+
+				<div id="map" class="map"></div>
+
+			</div>
 
 		</div>
 
@@ -418,17 +506,26 @@
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
+			menu: '#menu',
 			anchors: ['intro', 'services', 'projects', 'clients', 'partners', 'contacts'],
-			menu: '#main-nav',
-			navigation: true,
+			sectionsColor: ['#BAABE7', '#AABE7B', '#ABE7BA', '#BE7BAA', '#E7BAAB', '#7BAABE'],
 			slidesNavigation: true,
 			loopHorizontal: false,
-			// resetSliders: true,
-			// recordHistory: false,
 			controlArrowColor: '#2cb9db',
 		});
 	});
 </script>
+<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?ver=4.4.5'></script>
+<script>
+	var gmlat = 55.742036;
+	var gmlng = 37.503581;
+	var gmtitle = "Solution P";
+	var gmicon = "http://solutionp.ru/wp-content/uploads/2015/12/marker.png";
+	var gmcontent = "<p>Офис Solution P</p>";
+</script>
+<script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g">
+</script>
+
 
 </body>
 </html>

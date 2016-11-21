@@ -161,28 +161,31 @@ html.fp-enabled,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
 .fp-slidesNav ul li:hover a.active span{
-    height: 13px;
-    width: 13px;
-    margin: -5px 0 0 -5px;
+    height: 14px;
+    width: 14px;
+    margin: -9px 0 0 -6px;
     border-radius: 100%;
+    background: none;
+    border: 2px solid #2cb9db;
  }
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
+    box-sizing: border-box;
     border-radius: 100%;
     position: absolute;
     z-index: 1;
-    width: 7px;
-    height: 7px;
+    width: 9px;
+    height: 9px;
     border: 0;
-    background: #333;
     background: #2cb9db;
+    border: 2px solid rgba(0, 0, 0, 0);
     left: 50%;
     top: 50%;
-    margin: -2px 0 0 -2px;
-    -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition: all 0.1s ease-in-out;
-    -o-transition: all 0.1s ease-in-out;
-    transition: all 0.1s ease-in-out;
+    margin: -5px 0 0 -4px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
 }
 #fp-nav ul li:hover a span,
 .fp-slidesNav ul li:hover a span{

@@ -111,10 +111,10 @@
         // Create some defaults, extending them with any options that were provided
         options = $.extend({
             //navigation
-            menu: false,
+            menu: true,
             anchors:[],
             lockAnchors: false,
-            navigation: false,
+            navigation: true,
             navigationPosition: 'right',
             navigationTooltips: [],
             showActiveTooltip: false,
@@ -125,7 +125,7 @@
 
             //scrolling
             css3: true,
-            scrollingSpeed: 700,
+            scrollingSpeed: 750,
             autoScrolling: true,
             fitToSection: true,
             fitToSectionDelay: 1000,

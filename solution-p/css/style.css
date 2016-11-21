@@ -1,3 +1,4 @@
+/*  S T A R T  O F  reset.less  */
 html,
 body,
 div,
@@ -118,7 +119,7 @@ input {
 }
 /* remember to define focus styles! */
 a:focus {
-  outline: thin dotted;
+  outline: 0;
 }
 /* remember to highlight inserts somehow! */
 ins {
@@ -126,9 +127,6 @@ ins {
 }
 del {
   text-decoration: line-through;
-}
-a {
-  color: white;
 }
 blockquote,
 q {
@@ -171,3 +169,75 @@ textarea {
   display: table;
   clear: both;
 }
+/*  E N D  O F  reset.less  */
+/*  S T A R T  O F  variables.less  */
+@pre-tablet : (min-width: 500px) and (max-width: 929px);
+@tablet : (min-width: 930px) and (max-width: 1279px);
+@desktop : (min-width: 1280px);
+@desktop-lg : (min-width: 1692px);
+@retina : (min-resolution: 192dpi) and (min-resolution: 2dppx);
+.transition {
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+}
+/*  E N D  O F  variables.less  */
+/*  S T A R T  O F  main.less  */
+body {
+  font-family: Helvetica, Arial, sans;
+  -webkit-font-smoothing: antialiased;
+}
+.header {
+  position: absolute;
+}
+.logo {
+  position: relative;
+  z-index: 1000;
+}
+.logo__img {
+  width: 200px;
+}
+.main-nav {
+  position: relative;
+  height: 100px;
+}
+.main-nav__list {
+  position: relative;
+  z-index: 1000;
+}
+.main-nav__list .main-nav__item {
+  list-style: none;
+  float: left;
+  margin-right: 20px;
+}
+.slide {
+  float: left;
+}
+.slide__btns {
+  width: 800px;
+  margin: 0 auto;
+}
+.slide__btn {
+  float: left;
+  width: 200px;
+  padding: 10px;
+  margin-right: 15px;
+  color: #fff;
+  text-align: center;
+  background-color: #2cb9db;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.slide__btn_contact {
+  float: none;
+  margin: 0 auto;
+}
+.slide__btn_next {
+  float: right;
+}
+.map {
+  margin: 0 auto;
+  width: 800px;
+  height: 400px;
+  background-color: #2cb9db;
+}
+/*  E N D  O F  main.less  */
