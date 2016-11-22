@@ -34,8 +34,13 @@ a {
     text-align: center;
 }
 
+.section__inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
 #menu {
-    position: fixed;
+    position: relative;
     margin: 0;
     padding: 0;
     top: 0;
@@ -47,23 +52,18 @@ a {
 
 #menu li {
     display: inline-block;
-    margin: 10px;
+    margin: 5px;
     color: #000;
     background: #fff;
     background: rgba(255, 255, 255, .5);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
     &.active {
         background: #666;
         background: rgba(0, 0, 0, .5);
         color: #fff
     }
 }
-
-
-
-
-
 
 #menu li a,
 #menu li.active a:hover {
@@ -80,11 +80,9 @@ a {
 
 #menu li a,
 #menu li.active a {
-    padding: 9px 18px;
+    padding: 5px 10px;
     display: block
 }
-
-
 
 
 
@@ -148,21 +146,20 @@ a {
 }
 
 .menu {
-    display: none;
+    // display: none;
 }
 
-.section__intro .logo {
-    display: block;
+.logo__img {
+    width: 256px;
 }
 
-.logo {
-    // position: absolute;
+.logo_header {
+    position: relative;
     z-index: 1000;
 }
-.logo__img {
-    width: 200px;
+.logo__img_header {
+    width: 128px;
 }
-
 
 .main-nav {
     position: relative;
@@ -182,20 +179,49 @@ a {
 .slide {
     float: left;
 }
+.slide__inner {
+    margin: 0 auto;
+    max-width: 500px;
+}
+.slide__features {
+    float: left;
+    // margin: 0 auto;
+}
+.feature {
+    float: left;
+    background-color: @main;
+    line-height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    a {
+        display: block;
+        width: 100px;
+        height: 100px;
+    }
+}
+
 .slide__btns{
-    width: 800px;
+    float: left;
+    max-width: 600px;
     margin: 0 auto;
 }
 .slide__btn {
     float: left;
-    width: 200px;
+    width: 100px;
+    margin-right: 10px;
     padding: 10px;
-    margin-right: 15px;
     color: #fff;
     text-align: center;
     background-color: #2cb9db;
     cursor: pointer;
     border-radius: 2px;
+    border: 1px solid red;
+}
+.slide__btn a {
+    display: block;
+}
+.slide__btn_prev {
+    float: left;
 }
 .slide__btn_contact {
     float: none;

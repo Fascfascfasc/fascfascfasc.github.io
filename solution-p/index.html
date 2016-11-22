@@ -33,8 +33,8 @@
 
 		<div class="header__inner">
 
-			<a href="#intro" class="logo_header" data-menuanchor="intro">
-				<img src="./img/logo.png" alt="Solution-P logotype" class="logo__img">
+			<a href="#intro" class="logo_header">
+				<img src="./img/logo.png" alt="Solution-P logotype" class="logo__img_header">
 			</a>
 
 			<ul id="menu" class="menu">
@@ -74,233 +74,281 @@
 			<!-- Интро -->
 			<div id="section1" class="section section_intro ">
 
-				<a href="#intro" class="logo" data-menuanchor="intro">
+				<div class="section__inner">
+
 					<img src="./img/logo.png" alt="Solution-P logotype" class="logo__img">
-				</a>
 
-				<div class="intro__text"> <!-- ОК? -->
-					<p>
-						Компания Solution P создана коллективом профи, имеющих многолетний опыт в сфере рекламных и маркетинговых услуг. Объединив специалистов и профессионалов  рекламного дела мы создали удобную для клиента среду работы, позволяющую выработать наилучшее решение в реализации проектов практически любой сложности и масштаба.
-					</p>
+					<div class="intro__text"> <!-- ОК? -->
+						<p>
+							Компания Solution P создана коллективом профи, имеющих многолетний опыт в сфере рекламных и маркетинговых услуг. Объединив специалистов и профессионалов  рекламного дела мы создали удобную для клиента среду работы, позволяющую выработать наилучшее решение в реализации проектов практически любой сложности и масштаба.
+						</p>
+					</div>
+
+					<a href="#projects" class="next-page__btn btn">Наши проекты</a> <!-- ОК? -->
+
 				</div>
-
-				<a href="#" class="next-page__btn btn">Наши проекты</a> <!-- ОК? -->
 
 			</div>
 
 			<!-- Услуги -->
 			<div id="section2" class="section section_services">
 
-				<div id="slide1" class="slide slide_intro" data-anchor="slide_1">
+				<div id="slide1" class="slide slide_intro" data-anchor="services">
 
-					<div class="slide__header">
-						<h3>Наши услуги</h3>
+					<div class="slide__inner">
+
+						<div class="slide__header">
+						<h2>Наши услуги</h2>
 					</div>
 
-					<div class="slide__desc">
+						<div class="slide__desc">
 						<p>
 							Наши клиенты – это малый, средний и крупный бизнес, а так же государственные компании и организации. Креативная составляющая Вашей компании – наша ответственность.
 						</p>
 					</div>
 
-					<div class="slide__features">
+						<div class="slide__features">
 
 						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Production</div>
+							<a href="#services/production">
+								<div class="feature__img"></div>
+								<div class="feature__title">Production</div>
+							</a>
 						</div>
 
 						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Event</div>
+							<a href="#services/event">
+								<div class="feature__img"></div>
+								<div class="feature__title">Event</div>
+							</a>
 						</div>
 
 						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Creative</div>
+							<a href="#services/creative">
+								<div class="feature__img"></div>
+								<div class="feature__title">Creative</div>
+							</a>
 						</div>
 
 						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Digital</div>
+							<a href="#services/digital">
+								<div class="feature__img"></div>
+								<div class="feature__title">Digital</div>
+							</a>
 						</div>
 
 					</div>
 
-					<div class="slide__btns">
+						<div class="slide__btns">
 
 						<div class="slide__btn slide__btn_next">
-							<a href="#slide2" data-menuanchor="slide_2">Production</a>
+							<a href="#services/production" data-menuanchor="slide_2">Production</a>
 						</div>
 
 					</div>
-
-
-				</div>
-
-				<div id="slide2" class="slide slide_production" data-anchor="slide_2">
-
-					<div class="slide__header">
-						<h3>Production</h3>
-					</div>
-
-					<div class="slide__features">
-
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Сувенирная продукция</div>
-						</div>
-
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Наружная реклама</div>
-						</div>
-
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Текстиль. Пошив и брендирование</div>
-						</div>
-
-					</div>
-
-					<div class="slide__btns">
-
-						<div class="slide__btn slide__btn_prev">
-							<a href="#slide1" data-menuanchor="slide_one">Наши услуги</a>
-						</div>
-
-						<div class="slide__btn slide__btn_next">
-							Event
-						</div>
-
-						<div class="slide__btn slide__btn_contact">
-							Оставить заявку на участие
-						</div>
 
 					</div>
 
 				</div>
 
-				<div id="slide_3" class="slide slide_event">
+				<div id="slide2" class="slide slide_production" data-anchor="production">
 
-					<div class="slide__header">
-						<h3>Event</h3>
-					</div>
+					<div class="slide__inner">
 
-					<div class="slide__features">
-
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Частные мероприятия</div>
+						<div class="slide__header">
+							<h2>Production</h2>
 						</div>
 
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Корпоративные мероприятия</div>
+						<div class="slide__features">
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Сувенирная продукция</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Наружная реклама</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Текстиль. Пошив и брендирование</div>
+							</div>
+
 						</div>
 
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Публичные мероприятия</div>
-						</div>
+						<div class="slide__btns">
 
-					</div>
+							<div class="slide__btn slide__btn_prev">
+								<a href="#services/services">
+									Наши услуги
+								</a>
+							</div>
 
-					<div class="slide__btns">
+							<div class="slide__btn slide__btn_next">
+								<a href="#services/event">
+									Event
+								</a>
+							</div>
 
-						<div class="slide__btn slide__btn_prev">
-							Production
-						</div>
+							<div class="slide__btn slide__btn_contact">
+								Оставить заявку на участие
+							</div>
 
-						<div class="slide__btn slide__btn_next">
-							Creative
-						</div>
-
-						<div class="slide__btn slide__btn_contact">
-							Оставить заявку на участие
 						</div>
 
 					</div>
 
 				</div>
 
-				<div id="slide_4" class="slide slide_creative">
+				<div id="slide3" class="slide slide_event" data-anchor="event">
 
-					<div class="slide__header">
-						<h3>Creative</h3>
+					<div class="slide__inner">
+
+						<div class="slide__header">
+							<h2>Event</h2>
+						</div>
+
+						<div class="slide__features">
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Частные мероприятия</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Корпоративные мероприятия</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Публичные мероприятия</div>
+							</div>
+
+						</div>
+
+						<div class="slide__btns">
+
+							<div class="slide__btn slide__btn_prev">
+								<a href="#services/production">
+									Production
+								</a>
+							</div>
+
+							<div class="slide__btn slide__btn_next">
+								<a href="#services/creative">
+									Creative
+								</a>
+							</div>
+
+							<div class="slide__btn slide__btn_contact">
+								Оставить заявку на участие
+							</div>
+
+						</div>
+
 					</div>
-
-					<div class="slide__features">
-
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Фирменный стиль</div>
-						</div>
-
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Графический дизайн</div>
-						</div>
-
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Брендинг</div>
-						</div>
-
-					</div>
-
-					<div class="slide__btns">
-
-						<div class="slide__btn slide__btn_prev">
-							Event
-						</div>
-
-						<div class="slide__btn slide__btn_next">
-							Digital
-						</div>
-
-						<div class="slide__btn slide__btn_contact">
-							Оставить заявку на участие
-						</div>
-
-					</div>
-
 
 				</div>
 
-				<div id="slide_5" class="slide slide_digital">
+				<div id="slide4" class="slide slide_creative" data-anchor="creative">
 
-					<div class="slide__header">
-						<h3>Digital</h3>
+					<div class="slide__inner">
+
+						<div class="slide__header">
+							<h2>Creative</h2>
+						</div>
+
+						<div class="slide__features">
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Фирменный стиль</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Графический дизайн</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Брендинг</div>
+							</div>
+
+						</div>
+
+						<div class="slide__btns">
+
+							<div class="slide__btn slide__btn_prev">
+								<a href="#services/event">
+									Event
+								</a>
+							</div>
+
+							<div class="slide__btn slide__btn_next">
+								<a href="#services/digital">
+									Digital
+								</a>
+							</div>
+
+							<div class="slide__btn slide__btn_contact">
+								Оставить заявку на участие
+							</div>
+
+						</div>
+
 					</div>
 
-					<div class="slide__features">
+				</div>
 
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Web-дизайн</div>
+				<div id="slide5" class="slide slide_digital" data-anchor="digital">
+
+					<div class="slide__inner">
+
+						<div class="slide__header">
+							<h2>Digital</h2>
 						</div>
 
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Разработка приложений</div>
+						<div class="slide__features">
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Web-дизайн</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Разработка приложений</div>
+							</div>
+
+							<div class="feature">
+								<div class="feature__img"></div>
+								<div class="feature__title">Видео</div>
+							</div>
+
 						</div>
 
-						<div class="feature">
-							<div class="feature__img"></div>
-							<div class="feature__title">Видео</div>
-						</div>
+						<div class="slide__btns">
 
-					</div>
+							<div class="slide__btn slide__btn_prev">
+								<a href="#services/creative">
+									Creative
+								</a>
+							</div>
 
-					<div class="slide__btn slide__btns">
+							<div class="slide__btn slide__btn_next">
+								<a href="#services/services">
+									Услуги
+								</a>
+							</div>
 
-						<div class="slide__btn_prev">
-							Creative
-						</div>
+							<div class="slide__btn slide__btn_contact">
+								Оставить заявку на участие
+							</div>
 
-						<div class="slide__btn_contact">
-							Оставить заявку на участие
 						</div>
 
 					</div>
@@ -353,9 +401,8 @@
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			menu: '#menu',
-			anchors: ['intro', 'services', 'projects', 'clients', 'partners', 'contacts', 'slide_1', 'slide_2'],
+			anchors: ['intro', 'services', 'projects', 'clients', 'partners', 'contacts'],
 			controlArrowColor: '#2cb9db',
-			// sectionsColor: ['#BAABE7', '#AABE7B', '#ABE7BA', '#BE7BAA', '#E7BAAB', '#7BAABE'],
 		});
 	});
 </script>
