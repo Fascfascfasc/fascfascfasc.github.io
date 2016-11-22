@@ -1,4 +1,4 @@
-/*!
+/*
  * fullPage 2.8.8
  * https://github.com/alvarotrigo/fullPage.js
  * @license MIT licensed
@@ -118,7 +118,7 @@
             navigationPosition: 'right',
             navigationTooltips: [],
             showActiveTooltip: false,
-            slidesNavigation: false,
+            slidesNavigation: true,
             slidesNavPosition: 'bottom',
             scrollBar: false,
             hybrid: false,
@@ -133,7 +133,7 @@
             easingcss3: 'ease',
             loopBottom: false,
             loopTop: false,
-            loopHorizontal: true,
+            loopHorizontal: false,
             continuousVertical: false,
             continuousHorizontal: false,
             scrollHorizontally: false,

@@ -30,8 +30,8 @@ a {
 }
 
 .section {
-    position: relative
-    text-align: center
+    position: relative;
+    text-align: center;
 }
 
 #menu {
@@ -52,7 +52,7 @@ a {
     background: #fff;
     background: rgba(255, 255, 255, .5);
     -webkit-border-radius: 10px;
-    border-radius: 10px
+    border-radius: 10px;
     &.active {
         background: #666;
         background: rgba(0, 0, 0, .5);
@@ -138,12 +138,25 @@ a {
 }
 
 
+
+.fp-viewing-intro .header {
+    display: none; // Как скрыть из загрузки ???
+}
+
 .header {
     position: absolute;
 }
 
+.menu {
+    display: none;
+}
+
+.section__intro .logo {
+    display: block;
+}
+
 .logo {
-    position: relative;
+    // position: absolute;
     z-index: 1000;
 }
 .logo__img {
@@ -192,5 +205,8 @@ a {
     float: right;
 }
 
+h2 {
+    font-size: 24px;
+}
 
 /*  E N D  O F  main.less  */

@@ -197,15 +197,23 @@ body {
 a {
   text-decoration: none;
 }
-.section {
-  position: relative;
-}
 #fullpage,
 .section {
   height: 100%;
 }
 .section {
+  position: relative;
   text-align: center;
+}
+#menu {
+  position: fixed;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  height: 40px;
+  z-index: 70;
+  width: 100%;
 }
 #menu li {
   display: inline-block;
@@ -235,16 +243,6 @@ a {
 #menu li.active a {
   padding: 9px 18px;
   display: block;
-}
-#menu {
-  position: fixed;
-  padding: 0
-    top: 0;
-  left: 0;
-  height: 40px;
-  z-index: 70;
-  width: 100%;
-  margin: 0;
 }
 #fullPage-nav {
   position: absolute;
@@ -283,11 +281,19 @@ a {
   position: absolute;
   z-index: 1;
 }
+.fp-viewing-intro .header {
+  display: none;
+}
 .header {
   position: absolute;
 }
+.menu {
+  display: none;
+}
+.section__intro .logo {
+  display: block;
+}
 .logo {
-  position: relative;
   z-index: 1000;
 }
 .logo__img {
@@ -330,5 +336,18 @@ a {
 }
 .slide__btn_next {
   float: right;
+}
+h2 {
+  font-size: 24px;
+}
+/*  E N D  O F  main.less  */
+/*  S T A R T  O F  map.less  */
+.map {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -100;
 }
 /*  E N D  O F  main.less  */

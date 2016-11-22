@@ -33,7 +33,7 @@
 
 		<div class="header__inner">
 
-			<a href="#intro" class="logo" data-menuanchor="intro">
+			<a href="#intro" class="logo_header" data-menuanchor="intro">
 				<img src="./img/logo.png" alt="Solution-P logotype" class="logo__img">
 			</a>
 
@@ -74,6 +74,10 @@
 			<!-- Интро -->
 			<div id="section1" class="section section_intro ">
 
+				<a href="#intro" class="logo" data-menuanchor="intro">
+					<img src="./img/logo.png" alt="Solution-P logotype" class="logo__img">
+				</a>
+
 				<div class="intro__text"> <!-- ОК? -->
 					<p>
 						Компания Solution P создана коллективом профи, имеющих многолетний опыт в сфере рекламных и маркетинговых услуг. Объединив специалистов и профессионалов  рекламного дела мы создали удобную для клиента среду работы, позволяющую выработать наилучшее решение в реализации проектов практически любой сложности и масштаба.
@@ -87,7 +91,7 @@
 			<!-- Услуги -->
 			<div id="section2" class="section section_services">
 
-				<div id="slide1" class="slide slide_intro">
+				<div id="slide1" class="slide slide_intro" data-anchor="slide_1">
 
 					<div class="slide__header">
 						<h3>Наши услуги</h3>
@@ -126,7 +130,7 @@
 					<div class="slide__btns">
 
 						<div class="slide__btn slide__btn_next">
-							Production
+							<a href="#slide2" data-menuanchor="slide_2">Production</a>
 						</div>
 
 					</div>
@@ -134,7 +138,7 @@
 
 				</div>
 
-				<div id="slide2" class="slide slide_production">
+				<div id="slide2" class="slide slide_production" data-anchor="slide_2">
 
 					<div class="slide__header">
 						<h3>Production</h3>
@@ -154,7 +158,7 @@
 
 						<div class="feature">
 							<div class="feature__img"></div>
-							<div class="feature__title">Текстиль. Пшив и брендирование</div>
+							<div class="feature__title">Текстиль. Пошив и брендирование</div>
 						</div>
 
 					</div>
@@ -162,7 +166,7 @@
 					<div class="slide__btns">
 
 						<div class="slide__btn slide__btn_prev">
-							Наши услуги
+							<a href="#slide1" data-menuanchor="slide_one">Наши услуги</a>
 						</div>
 
 						<div class="slide__btn slide__btn_next">
@@ -177,7 +181,7 @@
 
 				</div>
 
-				<div id="slide3" class="slide slide_event">
+				<div id="slide_3" class="slide slide_event">
 
 					<div class="slide__header">
 						<h3>Event</h3>
@@ -220,7 +224,7 @@
 
 				</div>
 
-				<div id="slide4" class="slide slide_creative">
+				<div id="slide_4" class="slide slide_creative">
 
 					<div class="slide__header">
 						<h3>Creative</h3>
@@ -264,7 +268,7 @@
 
 				</div>
 
-				<div id="slide5" class="slide slide_digital">
+				<div id="slide_5" class="slide slide_digital">
 
 					<div class="slide__header">
 						<h3>Digital</h3>
@@ -333,7 +337,7 @@
 					<h2>Контакты</h2>
 				</div>
 
-				<div id="map" style="width:100%; height:100%;"></div>
+				<div id="map" class="map"></div>
 
 			</div>
 
@@ -343,26 +347,19 @@
 
 </div>
 
-
-</div>
-
-<!-- Скрипты -->
 <script src="./js/jquery.min.js"></script>
 <script src="./js/jquery.fullPage.js"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			menu: '#menu',
-			anchors: ['intro', 'services', 'projects', 'clients', 'partners', 'contacts'],
-			sectionsColor: ['#BAABE7', '#AABE7B', '#ABE7BA', '#BE7BAA', '#E7BAAB', '#7BAABE'],
-			slidesNavigation: true,
-			loopHorizontal: false,
+			anchors: ['intro', 'services', 'projects', 'clients', 'partners', 'contacts', 'slide_1', 'slide_2'],
 			controlArrowColor: '#2cb9db',
+			// sectionsColor: ['#BAABE7', '#AABE7B', '#ABE7BA', '#BE7BAA', '#E7BAAB', '#7BAABE'],
 		});
 	});
 </script>
-<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g"></script> -->
-<script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g"></script>
 <script>
 	function initialize() {
 		var myLatLng = {
@@ -387,12 +384,6 @@
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
 </script>
-
-	<!-- var gmtitle = "Solution P";
-	var gmicon = "http://solutionp.ru/wp-content/uploads/2015/12/marker.png";
-	var gmcontent = "<p>Офис Solution P</p>"; -->
-
-
 
 </body>
 </html>
