@@ -24,160 +24,6 @@
 	</script>
 	<![endif]-->
 
-	<style>
-
-	    blockquote,
-	    body,
-	    dd,
-	    div,
-	    dl,
-	    dt,
-	    fieldset,
-	    form,
-	    h1,
-	    h2,
-	    h3,
-	    h4,
-	    h5,
-	    h6,
-	    input,
-	    li,
-	    ol,
-	    p,
-	    pre,
-	    td,
-	    textarea,
-	    th,
-	    ul {
-	        margin: 0;
-	        padding: 0
-	    }
-
-	    #fullPage-nav li a,
-	    #menu li a,
-	    a {
-	        text-decoration: none
-	    }
-
-	    .section {
-	        position: relative
-	    }
-
-	    table {
-	        border-spacing: 0
-	    }
-
-	    ol,
-	    ul {
-	        list-style: none
-	    }
-
-	    body,
-	    html {
-	        overflow: hidden
-	    }
-
-	    #fullpage,
-	    .section,
-	    body,
-	    html {
-	        height: 100%
-	    }
-
-	    .section {
-	        text-align: center
-	    }
-
-	    #menu li {
-	        display: inline-block;
-	        margin: 10px;
-	        color: #000;
-	        background: #fff;
-	        background: rgba(255, 255, 255, .5);
-	        -webkit-border-radius: 10px;
-	        border-radius: 10px
-	    }
-
-	    #menu li.active {
-	        background: #666;
-	        background: rgba(0, 0, 0, .5);
-	        color: #fff
-	    }
-
-	    #menu li a,
-	    #menu li.active a:hover {
-	        color: #000
-	    }
-
-	    #menu li.active a {
-	        color: #fff
-	    }
-
-	    #menu li:hover {
-	        background: rgba(255, 255, 255, .8)
-	    }
-
-	    #menu li a,
-	    #menu li.active a {
-	        padding: 9px 18px;
-	        display: block
-	    }
-
-	    #menu {
-	        position: fixed;
-	        padding: 0
-	        top: 0;
-	        left: 0;
-	        height: 40px;
-	        z-index: 70;
-	        width: 100%;
-	        margin: 0
-	    }
-
-	    #fullPage-nav {
-	        position: absolute;
-	        z-index: 100;
-	        margin-top: -32px;
-	        top: 50%;
-	        opacity: 1
-	    }
-
-	    #fullPage-nav li {
-	        display: block;
-	        width: 14px;
-	        height: 13px;
-	        margin: 7px
-	    }
-
-	    #fullPage-nav li a {
-	        display: block;
-	        position: relative;
-	        z-index: 1;
-	        width: 100%;
-	        height: 100%;
-	        cursor: pointer
-	    }
-
-	    #fullPage-nav li .active span {
-	        background: #333
-	    }
-
-	    #fullPage-nav span {
-	        top: 2px;
-	        left: 2px;
-	        width: 8px;
-	        height: 8px;
-	        border: 1px solid #000;
-	        background: rgba(0, 0, 0, 0);
-	        -webkit-border-radius: 50%;
-	        -moz-border-radius: 50%;
-	        border-radius: 50%;
-	        position: absolute;
-	        z-index: 1
-	    }
-
-	</style>
-
 </head>
 <body>
 
@@ -487,7 +333,7 @@
 					<h2>Контакты</h2>
 				</div>
 
-				<div id="map" class="map"></div>
+				<div id="map" style="width:100%; height:400px;"></div>
 
 			</div>
 
@@ -515,16 +361,36 @@
 		});
 	});
 </script>
-<script type='text/javascript' src='https://maps.googleapis.com/maps/api/js?ver=4.4.5'></script>
+<script src="https://maps.googleapis.com/maps/api/js"></script>
+<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g"></script> -->
+
 <script>
-	var gmlat = 55.742036;
-	var gmlng = 37.503581;
-	var gmtitle = "Solution P";
+	function initialize() {
+		var myLatLng = {
+			lat: 55.742036,
+			lng: 37.503581
+		};
+
+		// Create a map object and specify the DOM element for display
+		var map = new google.maps.Map(document.getElementById('map'), {
+			center: myLatLng,
+			scrollwheel: false,
+			zoom: 15
+		});
+		// Create a marker and set its position
+		var marker = new google.maps.Marker ({
+			map: map,
+			position: myLatLng,
+			icon: './img/map-marker.svg',
+			title: 'Solution P'
+		});
+	}
+</script>
+
+	<!-- var gmtitle = "Solution P";
 	var gmicon = "http://solutionp.ru/wp-content/uploads/2015/12/marker.png";
-	var gmcontent = "<p>Офис Solution P</p>";
-</script>
-<script type='text/javascript' src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g">
-</script>
+	var gmcontent = "<p>Офис Solution P</p>"; -->
+
 
 
 </body>
