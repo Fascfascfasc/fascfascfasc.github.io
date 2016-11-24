@@ -1,16 +1,19 @@
 /*  S T A R T  O F  main.less  */
 
-// @font-face {
-//     font-family: 'FuturaNewBook';
-//     src: url('../fonts/FuturaNewBook.otf');
-// }
-
-
 body {
   font-family: Helvetica, Arial, sans;
   -webkit-font-smoothing: antialiased;
 }
 
+
+.center-line {
+    position: absolute;
+    margin: 0 50%;
+    width: 1px;
+    height: 100%;
+    z-index: 100;
+    background-color: red;
+}
 
 // .clearfix { // Проверить, как работает аналогичный миксин в reset.less
 //   content: '.';
@@ -85,14 +88,6 @@ a {
 }
 
 
-
-
-
-
-
-
-
-
 #fullPage-nav {
     position: absolute;
     z-index: 100;
@@ -136,7 +131,6 @@ a {
 }
 
 
-
 .fp-viewing-intro .header {
     display: none; // Как скрыть из загрузки ???
 }
@@ -149,14 +143,12 @@ a {
     // display: none;
 }
 
-.logo__img {
-    width: 256px;
-}
 
 .logo_header {
     position: relative;
     z-index: 1000;
 }
+
 .logo__img_header {
     width: 128px;
 }

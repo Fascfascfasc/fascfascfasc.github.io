@@ -1,0 +1,41 @@
+/*  S T A R T  O F  section_intro.less  */
+
+.section_intro {
+    padding: 0 30px;
+    .section__inner {
+        margin-top: -15%;
+    }
+}
+
+
+
+.logo__img {
+    // width: 256px;
+    width: 158px;
+    margin: 35px;
+}
+
+.intro__text {
+    .font_main;
+}
+
+.next-page__link {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+    right: 0;
+    color: @main;
+    text-transform: uppercase;
+    &::before {
+        content: '';
+        position: absolute;
+        margin-top: 20px;
+        margin-left: 29px;
+        width: 30px;
+        height: 16px;
+        background-image: url(../img/arrow_down.png);
+    }
+}
+
+/*  E N D  O F  section_intro.less  */

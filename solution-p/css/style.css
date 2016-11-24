@@ -182,15 +182,46 @@ textarea {
 @desktop : (min-width: 1280px);
 @desktop-lg : (min-width: 1692px);
 @retina : (min-resolution: 192dpi) and (min-resolution: 2dppx);
+.font_main {
+  font-family: 'FuturaNewBook', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
 .transition {
   transition-duration: 0.5s;
   transition-timing-function: ease-in-out;
 }
 /*  E N D  O F  variables.less  */
+/*  S T A R T  O F  fonts.less  */
+@font-face {
+  font-family: 'FuturaNewBook';
+  src: url('../fonts/FuturaNewBook.otf');
+}
+@font-face {
+  font-family: 'FuturaDemiC';
+  src: url('../fonts/FuturaDemiC.otf');
+}
+@font-face {
+  font-family: 'FuturaDemiCItalic';
+  src: url('../fonts/FuturaDemiC-Italic.otf');
+}
+/*  E N D  O F  fonts.less  */
 /*  S T A R T  O F  main.less  */
 body {
   font-family: Helvetica, Arial, sans;
   -webkit-font-smoothing: antialiased;
+}
+.center-line {
+  position: absolute;
+  margin: 0 50%;
+  width: 1px;
+  height: 100%;
+  z-index: 100;
+  background-color: red;
 }
 #fullPage-nav li a,
 #menu li a,
@@ -291,9 +322,6 @@ a {
 .header {
   position: absolute;
 }
-.logo__img {
-  width: 256px;
-}
 .logo_header {
   position: relative;
   z-index: 1000;
@@ -370,6 +398,45 @@ h2 {
   font-size: 24px;
 }
 /*  E N D  O F  main.less  */
+/*  S T A R T  O F  section_intro.less  */
+.section_intro {
+  padding: 0 30px;
+}
+.section_intro .section__inner {
+  margin-top: -15%;
+}
+.logo__img {
+  width: 158px;
+  margin: 35px;
+}
+.intro__text {
+  font-family: 'FuturaNewBook', sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+.next-page__link {
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  left: 0;
+  right: 0;
+  color: #2cb9db;
+  text-transform: uppercase;
+}
+.next-page__link::before {
+  content: '';
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 29px;
+  width: 30px;
+  height: 16px;
+  background-image: url(../img/arrow_down.png);
+}
+/*  E N D  O F  section_intro.less  */
 /*  S T A R T  O F  map.less  */
 .map {
   width: 100%;
