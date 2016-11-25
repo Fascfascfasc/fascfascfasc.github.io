@@ -186,10 +186,9 @@ textarea {
   font-family: 'FuturaNewBook', sans-serif;
   font-size: 18px;
   line-height: 21px;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
+}
+.font_header {
+  font-family: 'FuturaDemiC', sans-serif;
 }
 .transition {
   transition-duration: 0.5s;
@@ -402,8 +401,8 @@ h2 {
 .section_intro {
   padding: 0 30px;
 }
-.section_intro .section__inner {
-  margin-top: -15%;
+.section__inner_intro {
+  height: 100%;
 }
 .logo__img {
   width: 158px;
@@ -413,14 +412,9 @@ h2 {
   font-family: 'FuturaNewBook', sans-serif;
   font-size: 18px;
   line-height: 21px;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  -ms-hyphens: auto;
-  hyphens: auto;
 }
 .next-page__link {
   display: block;
-  position: absolute;
   bottom: 80px;
   left: 0;
   right: 0;
