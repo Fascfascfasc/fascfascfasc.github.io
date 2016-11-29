@@ -422,6 +422,7 @@ h2 {
 /*  S T A R T  O F  section_intro.less  */
 .section_intro {
   padding: 0 50px;
+  min-height: 470px;
 }
 .section__inner_intro {
   height: 100%;
