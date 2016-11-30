@@ -4,22 +4,21 @@
 .section_intro {
     padding: 0 50px;
     min-height: 470px;
+    background: #e8e8e8;
+    // .logo__img_header {
+    //     opacity: 0;
+    //     .transition (opacity 0s);
+    // }
 }
 
 .section__inner_intro {
     height: 100%;
 }
 
-.fp-viewing-intro .logo__img_header {
-    display: none;
-    opacity: 0;
-    .transition (opacity 0s);
-}
-
 .logo__img {
     width: 158px;
     margin: 35px;
-    margin-top: 10%;
+    margin-top: 17.5%;
 }
 
 @media @mobile {
@@ -51,27 +50,28 @@
 
 .intro__text {
     margin: 0 auto;
-    max-width: 755px;
+    max-width: 765px;
     .font_main;
 }
 
 .next-page__link {
     display: block;
     position: absolute;
-    height: 60px;
+    height: 75px;
     margin-top: 50px;
-    padding-top: 25px;
+    padding-top: 35px;
     bottom: 0;
     left: 0;
     right: 0;
     color: @main;
+    font-size: 16px;
     text-transform: uppercase;
-    .gradient (@startColor: rgba(255,255,255,1), @endColor: rgba(0,0,0,0.4));
+    // .gradient (@startColor: rgba(255,255,255,0), @endColor: rgba(0,0,0,0.4));
     &::before {
         content: '';
         position: absolute;
-        margin-top: 20px;
-        margin-left: 29px;
+        margin-top: 35px;
+        margin-left: 44px;
         width: 30px;
         height: 16px;
         background-image: url(../img/arrow_down.png);

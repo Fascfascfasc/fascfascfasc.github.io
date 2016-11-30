@@ -1,41 +1,23 @@
+/*  S T A R T  O F  section_clients.less  */
 
-.section_c {
-  background-color: #f2f2f2;
+
+.section_clients {
+    background-color: @bg;
+    color: @white;
+}
+
+.fp-viewing-clients i {
+    background-color: @white;
+}
+
+.fp-viewing-clients #menu li {
+    & a {
+        color: @white;
+    }
+    &.active::before {
+        background-color: @white;
+    }
 }
 
 
-.sidebar_c {
-  background-color: @white;
-  border: 1px solid #ff0000;
-  .logo__svg {
-    fill: @black;
-    &:hover .logo__svg {
-      fill: @green;
-    }
-  }
-  .menu-icon__part {
-    background-color: @black;
-    &:hover .menu-icon__part {
-      background-color: @green;
-    }
-  }
-  .sidebar__main-text {
-    color: @black;
-    & .header_huge {
-      font-size: 32px;
-      line-height: 36px;
-    }
-  }
-  .icon_next-page {
-    color: @black;
-    &::before {
-      background-color: @black;
-    }
-    &:hover {
-      color: @green;
-      &::before {
-        background-color: @green;
-      }
-    }
-  }
-}
+/*  E N D  O F  section_clients.less  */

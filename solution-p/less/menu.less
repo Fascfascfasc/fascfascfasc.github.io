@@ -7,24 +7,6 @@
     background-color: #444;
 }
 
-@media @mobile {
-    .header__menu {
-        display: none;
-    }
-}
-
-@media @pre-tablet {
-    // .header__menu {
-    //     display: none;
-    // }
-}
-
-@media @tablet {
-    // .header__menu {
-    //     width: 400px;
-    // }
-}
-
 
 #menu {
     position: relative;
@@ -38,7 +20,7 @@
     position: relative;
     float: left;
     left: -50%;
-    margin-right: 10px;
+    margin-right: 25px;
     text-transform: uppercase;
     .transition (opacity 0.3s);
     &.active::before {
@@ -51,6 +33,7 @@
         background-color: @main;
         opacity: 0.5;
         border-radius: 48%;
+        .transition (background-color 0.3s);
     }
     &:not(.active):hover {
         opacity: 0.6;
@@ -60,7 +43,8 @@
         display: block;
         color: @main;
         .font_header;
-        font-size: 13px;
+        font-size: 14px;
+        .transition (color 0.3s);
     }
 }
 
@@ -80,9 +64,69 @@
     // .transition (opacity 0.3s);
 }
 
+
 .menu__btn {
     display: none;
+    float: right;
+    width: 30px;
+    margin-right: 20px;
+    margin-top: 25px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    i {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: @main;
+        margin-bottom: 4px;
+        .transition (margin-bottom 0.3s);
+        .transition (background-color 0.3s);
+        &:last-child {
+            margin-bottom: 0px;
+        }
+    }
+    &:hover {
+        cursor: pointer;
+    }
+    &:focus {
+        outline: none;
+        border-style: none;
+    }
+    // &:hover .i_top {
+    //     margin-bottom: 6px;
+    //     .transition (margin 0.4s);
+    // }
+    // &:hover .i_center {
+    //     // margin: 6px auto;
+    //     .transition (margin 0.4s);
+    // }
+    // &:hover .i_bottom {
+    //     margin-top: 6px;
+    //     .transition (margin 0.4s);
+    // }
 }
 
+
+@media @mobile {
+    .header__menu {
+        display: none;
+    }
+    .menu__btn {
+        display: block;
+    }
+}
+
+@media @pre-tablet {
+    #menu li {
+        margin-right: 10px;
+    }
+}
+
+@media @tablet {
+    // .header__menu {
+    //     width: 400px;
+    // }
+}
 
 /*  E N D  O F  menu.less  */
