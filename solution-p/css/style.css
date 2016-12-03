@@ -217,13 +217,17 @@ a {
   position: relative;
   text-align: center;
   background: #e8e8e8;
-  padding: 0 30px;
 }
 .section__inner {
   margin: 0 auto;
 }
-h2 {
-  font-size: 24px;
+.section__desc {
+  max-width: 765px;
+  font-family: 'FuturaNewBook', sans-serif;
+  font-size: 19px;
+  line-height: 22px;
+  margin: 0 auto;
+  margin-bottom: 70px;
 }
 .slide {
   float: left;
@@ -261,6 +265,7 @@ h2 {
 .feature__img {
   height: 200px;
   width: 100%;
+  margin-bottom: 10px;
   border: 1px solid #2cb9db;
 }
 .slide__btns {
@@ -298,6 +303,23 @@ h2 {
   width: 240px;
   border: 1px solid #2cb9db;
   background-color: #2cb9db;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.slide__btn_contact:hover {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+}
+.slide__btn_contact:hover a {
+  color: #2cb9db;
 }
 .slide__btn_next {
   float: right;
@@ -540,13 +562,6 @@ h2 {
   margin: 35px;
   margin-top: 17.5%;
 }
-.intro__text {
-  margin: 0 auto;
-  max-width: 765px;
-  font-family: 'FuturaNewBook', sans-serif;
-  font-size: 19px;
-  line-height: 22px;
-}
 .next-page__link {
   display: block;
   position: absolute;
@@ -569,6 +584,9 @@ h2 {
   height: 16px;
   background-image: url(../img/arrow_down.png);
 }
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+  display: ;
+}
 @media only screen and (min-width: 700px) and (max-width: 929px) {
   .logo__img {
     width: 256px;
@@ -588,22 +606,30 @@ h2 {
 /*  S T A R T  O F  section_services.less  */
 .section_services {
   min-height: 660px;
-  background-image: url(../img/bg_sec_serv.jpg);
   background-position: center;
   background-size: cover;
   color: #ffffff;
 }
+.slide_intro {
+  background-image: url(../img/bg_sec_serv.jpg);
+}
+.slide_production {
+  background-image: url(../img/bg_production.jpg);
+}
+.slide_event {
+  background-image: url(../img/bg_event.jpg);
+}
+.slide_creative {
+  background-image: url(../img/bg_creative.jpg);
+}
+.slide_digital {
+  background-image: url(../img/bg_digital.jpg);
+}
 .slide__header {
   margin-top: 150px;
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-family: 'FuturaDemiC', sans-serif;
   font-size: 34px;
-}
-.slide__desc {
-  font-family: 'FuturaNewBook', sans-serif;
-  font-size: 19px;
-  line-height: 22px;
-  margin-bottom: 70px;
 }
 .slide__features {
   width: 100%;
@@ -653,6 +679,9 @@ h2 {
 .feature__img_digital {
   width: 37px;
 }
+.feature__img_souvenir {
+  width: 100px;
+}
 .slide_intro .slide__btn_next {
   float: none;
   margin: 0 auto;
@@ -686,6 +715,13 @@ h2 {
   background-position: center;
   background-size: cover;
   color: #ffffff;
+}
+.projects_icon {
+  height: 200px;
+}
+.img_projects {
+  width: 175px;
+  fill: #ffffff;
 }
 /*  E N D  O F  section_projects.less  */
 /*  S T A R T  O F  section_clients.less  */
