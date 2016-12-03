@@ -133,7 +133,7 @@
             easingcss3: 'ease',
             loopBottom: false,
             loopTop: false,
-            loopHorizontal: false,
+            loopHorizontal: true,
             continuousVertical: false,
             continuousHorizontal: false,
             scrollHorizontally: false,
@@ -163,7 +163,7 @@
             fixedElements: null,
             responsive: 0, //backwards compabitility with responsiveWiddth
             responsiveWidth: 0,
-            responsiveHeight: 480,
+            responsiveHeight: 650,
             responsiveSlides: false,
 
             //Custom selectors

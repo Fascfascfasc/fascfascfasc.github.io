@@ -1,22 +1,17 @@
 /*  S T A R T  O F  main.less  */
 
+
 body {
   font-family: Helvetica, Arial, sans;
   -webkit-font-smoothing: antialiased;
 }
-
-
-// .clearfix { // Проверить, как работает аналогичный миксин в reset.less
-//   content: '.';
-//   clear: both;
-// }
-
 
 #fullPage-nav li a,
 #menu li a,
 a {
     text-decoration: none
 }
+
 
 #fullpage,
 .section, {
@@ -27,71 +22,107 @@ a {
     position: relative;
     text-align: center;
     background: #e8e8e8;
+    padding: 0 30px;
 }
 
 .section__inner {
-    max-width: 600px;
+    // max-width: 600px;
     margin: 0 auto;
 }
-
 h2 {
     font-size: 24px;
 }
 
 
-
 .slide {
     float: left;
 }
+
 .slide__inner {
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 700px;
 }
-.slide__features {
-    float: left;
-    // margin: 0 auto;
-}
+
+
 .feature {
     float: left;
-    background-color: @main;
-    line-height: 100px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    box-sizing: border-box;
+    padding: 0 40px;
+    width: 33%;
     a {
-        display: block;
-        width: 100px;
-        height: 100px;
+        color: @white;
+        .transition (all 0.3s);
+        &:hover {
+            color: @main;
+            .feature__img {
+                border-color: @main;
+                fill: @main;
+                .transition (all 0.3s);
+            }
+        }
     }
 }
-.slide__btns{
-    float: left;
-    max-width: 600px;
+
+.feature__img {
+    height: 200px; // Удалить
+    width: 100%; // Удалить
+    border: 1px solid @main; // Удалить
+}
+
+.slide__btns {
     margin: 0 auto;
 }
+
 .slide__btn {
     float: left;
-    width: 100px;
-    margin-right: 10px;
+    box-sizing: border-box;
+    width: 165px;
+    height: 40px;
+    margin: 0 auto;
+    // margin-right: 10px;
     padding: 10px;
     color: #fff;
     text-align: center;
-    background-color: #2cb9db;
     cursor: pointer;
     border-radius: 2px;
-    border: 1px solid red;
+    border: 1px solid @white;
+    .transition (all 0.3s);
+    &:hover {
+        border-color: @main;
+        a {
+            color: @main;
+        }
+    }
 }
-.slide__btn a {
-    display: block;
-}
+
 .slide__btn_prev {
     float: left;
 }
+
 .slide__btn_contact {
     float: none;
-    margin: 0 auto;
+    width: 240px;
+    border: 1px solid @main;
+    background-color: @main;
 }
+
 .slide__btn_next {
     float: right;
+}
+
+.slide__btn a {
+    display: block;
+    color: @white;
+    line-height: 18px;
+    text-transform: uppercase;
+    .transition (all 0.3s);
+}
+
+
+@media @mobile {
+    #fp-nav {
+        display: none;
+    }
 }
 
 

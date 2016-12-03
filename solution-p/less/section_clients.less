@@ -2,7 +2,7 @@
 
 
 .section_clients {
-    background-color: @bg;
+    background-color: @bg - 100;
     color: @white;
 }
 
@@ -17,6 +17,21 @@
     &.active::before {
         background-color: @white;
     }
+}
+
+.fp-viewing-clients #fp-nav ul li a.active span,
+.fp-viewing-clients .fp-slidesNav ul li a.active span,
+.fp-viewing-clients #fp-nav ul li:hover a.active span,
+.fp-viewing-clients .fp-slidesNav ul li:hover a.active span {
+    border: 2px solid @white;
+ }
+.fp-viewing-clients #fp-nav ul li a span,
+.fp-viewing-clients .fp-slidesNav ul li a span {
+    background: @white;
+}
+.fp-viewing-clients #fp-nav ul li:hover a span,
+.fp-viewing-clients .fp-slidesNav ul li:hover a span{
+    border: 2px solid @white;
 }
 
 
