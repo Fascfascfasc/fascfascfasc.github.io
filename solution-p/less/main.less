@@ -20,13 +20,15 @@ a {
 .section {
     position: relative;
     text-align: center;
-    background: #e8e8e8;
-    // padding: 0 30px;
+    background-position: center;
+    background-size: cover;
 }
 
 .section__inner {
-    // max-width: 600px;
+    // position: relative;
+    max-width: 1180px;
     margin: 0 auto;
+    padding: 0 20px;
 }
 
 .section__header { // Может нафиг не нужен, а обойтись .slide__header ?
@@ -40,11 +42,15 @@ a {
     max-width: 765px;
     .font_main;
     margin: 0 auto;
-    margin-bottom: 70px;
+    margin-bottom: 100px;
 }
 
+
 .slide {
-    float: left;
+    box-sizing: border-box;
+    padding: 0 30px;
+    background-position: center;
+    background-size: cover;
 }
 
 .slide__inner {
@@ -58,6 +64,7 @@ a {
     .font_header;
     font-size: 34px;
 }
+
 
 .feature {
     float: left;
@@ -97,6 +104,7 @@ a {
     fill: @white;
     .transition (all 0.3s);
 }
+
 
 .slide__btns {
     margin: 0 auto;
@@ -154,6 +162,15 @@ a {
 @media @mobile {
     #fp-nav {
         display: none;
+    }
+}
+
+@media @pre-tablet {
+    .section__inner {
+        padding: 0 80px;
+    }
+    .slide {
+        padding: 0 80px;
     }
 }
 

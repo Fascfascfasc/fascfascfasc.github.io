@@ -163,7 +163,7 @@
             fixedElements: null,
             responsive: 0, //backwards compabitility with responsiveWiddth
             responsiveWidth: 0,
-            responsiveHeight: 650,
+            responsiveHeight: 630,
             responsiveSlides: false,
 
             //Custom selectors

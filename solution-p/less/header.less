@@ -6,9 +6,13 @@
     width: 100%;
     height: 116px;
     .gradient (@startColor: rgba(0,0,0,0.6), @endColor: rgba(255,255,255,0));
-    opacity: 1;
-    .transition (opacity 1s);
+    .transition (all 1s);
     z-index: 1000;
+}
+
+.fp-viewing-intro .header {
+    .gradient (@startColor: rgba(0,0,0,0), @endColor: rgba(255,255,255,0));
+    .transition (all 0s);
 }
 
 .header__inner {
@@ -16,6 +20,7 @@
     max-width: 1180px;
     margin: 0 auto;
 }
+
 
 .logo_header {
     position: relative;
@@ -26,17 +31,17 @@
 }
 
 .logo__img_header {
-    // display: block;
+    // display: none;
     width: 128px;
-    opacity: 1;
-    .transition (opacity 1s);
+    .opacity (1);
+    .transition (all 1s);
 }
 
 .fp-viewing-intro .logo__img_header {
-    // display: none;
-    opacity: 0;
-    .transition (opacity 0s);
+    .opacity (0);
+    .transition (all 0s);
 }
+
 
 .btn_header {
     float: right;
@@ -47,10 +52,10 @@
     z-index: 100;
 }
 
+
 @media @mobile {
     .fp-viewing-intro .header {
         opacity: 0;
-        .transition (opacity 0s);
     }
     .logo_header {
         margin-top: 20px;
@@ -74,16 +79,14 @@
 }
 
 @media @tablet {
-
+    display: ;
 }
 
-
-
+// Попытка отобразить хедер при отключенном fp.js
 @media only screen and (min-height: 550px) {
     .logo__img_header {
         position: absolute;
         opacity: 1;
-        .transition (opacity 0s);
     }
 }
 
