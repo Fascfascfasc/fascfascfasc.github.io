@@ -11,10 +11,23 @@
     position: absolute;
     width: 100%;
     height: 116px;
+<<<<<<< HEAD
     .gradient (@startColor: rgba(0,0,0,0.75), @endColor: rgba(255,255,255,0));
     .opacity (1);
     .transition (all 1s);
 }
+=======
+    .gradient (@startColor: rgba(0,0,0,0.6), @endColor: rgba(255,255,255,0));
+    .transition (all 1s);
+    z-index: 1000;
+}
+
+.fp-viewing-intro .header {
+    .gradient (@startColor: rgba(0,0,0,0), @endColor: rgba(255,255,255,0));
+    .transition (all 0s);
+}
+
+>>>>>>> eae4b2b... add contact
 .header__inner {
     position: relative;
     max-width: 1180px;
@@ -23,17 +36,31 @@
     overflow: hidden;
 }
 
+
 .logo_header {
     position: relative;
     float: left;
     z-index: 500;
 }
 .logo__img_header {
+<<<<<<< HEAD
     width: 128px;
     .opacity (1);
     .transition (all 2s);
     z-index: 0;
+=======
+    // display: none;
+    width: 128px;
+    .opacity (1);
+    .transition (all 1s);
 }
+
+.fp-viewing-intro .logo__img_header {
+    .opacity (0);
+    .transition (all 0s);
+>>>>>>> eae4b2b... add contact
+}
+
 
 .btn_header {
     visibility: visible;
@@ -46,6 +73,7 @@
     .transition (all 1s);
 }
 
+<<<<<<< HEAD
 .fp-viewing-intro {
     .header_gradient,
     .logo__img_header,
@@ -53,6 +81,12 @@
         .opacity (0);
         .transition (all 0.3s);
         z-index: -100;
+=======
+
+@media @mobile {
+    .fp-viewing-intro .header {
+        opacity: 0;
+>>>>>>> eae4b2b... add contact
     }
 }
 
@@ -75,8 +109,18 @@
 }
 
 @media @tablet {
-
+    display: ;
 }
 
+<<<<<<< HEAD
+=======
+// Попытка отобразить хедер при отключенном fp.js
+@media only screen and (min-height: 550px) {
+    .logo__img_header {
+        position: absolute;
+        opacity: 1;
+    }
+}
+>>>>>>> eae4b2b... add contact
 
 /*  E N D  O F  header.less  */
