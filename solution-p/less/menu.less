@@ -7,7 +7,6 @@
     background-color: #444;
 }
 
-
 #menu {
     position: relative;
     float: left;
@@ -64,7 +63,6 @@
     // .transition (opacity 0.3s);
 }
 
-
 .menu__btn {
     display: none;
     float: right;
@@ -107,7 +105,6 @@
     // }
 }
 
-
 @media @mobile {
     .header__menu {
         display: none;
@@ -118,15 +115,19 @@
 }
 
 @media @pre-tablet {
+    #menu {
+        margin-top: 35px;
+    }
+    #menu li {
+        margin-right: 0px;
+    }
+}
+
+@media @tablet {
     #menu li {
         margin-right: 10px;
     }
 }
 
-@media @tablet {
-    // .header__menu {
-    //     width: 400px;
-    // }
-}
 
 /*  E N D  O F  menu.less  */

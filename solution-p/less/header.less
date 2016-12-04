@@ -38,6 +38,15 @@
     .transition (opacity 0s);
 }
 
+.btn_header {
+    float: right;
+    position: relative;
+    width: 110px;
+    margin-right: 30px;
+    margin-top: 40px;
+    z-index: 100;
+}
+
 @media @mobile {
     .fp-viewing-intro .header {
         opacity: 0;
@@ -50,7 +59,25 @@
     .logo__img_header {
         width: 87px;
     }
+    .btn_header {
+        display: none;
+    }
 }
+
+@media @pre-tablet {
+    .logo__img_header {
+        width: 87px;
+    }
+    .btn_header {
+        margin-top: 30px;
+    }
+}
+
+@media @tablet {
+
+}
+
+
 
 @media only screen and (min-height: 550px) {
     .logo__img_header {

@@ -29,6 +29,13 @@ a {
     margin: 0 auto;
 }
 
+.section__header { // Может нафиг не нужен, а обойтись .slide__header ?
+    margin-top: 50px;
+    margin-bottom: 30px;
+    .font_header;
+    font-size: 34px;
+}
+
 .section__desc {
     max-width: 765px;
     .font_main;
@@ -45,63 +52,89 @@ a {
     max-width: 700px;
 }
 
+.slide__header {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    .font_header;
+    font-size: 34px;
+}
+
 .feature {
     float: left;
     box-sizing: border-box;
-    padding: 0 40px;
     width: 33%;
-    a {
-        color: @white;
+    padding: 0 30px;
+    color: @white;
+    .transition (all 0.3s);
+}
+
+.feature_link:hover {
+    color: @main;
+    .transition (all 0.3s);
+    .feature__img {
+        border-color: @main;
         .transition (all 0.3s);
-        &:hover {
-            color: @main;
-            .feature__img {
-                border-color: @main;
-                fill: @main;
-                .transition (all 0.3s);
-            }
-        }
+    }
+    .icon {
+        fill: @main;
+        .transition (all 0.3s);
     }
 }
 
 .feature__img {
-    height: 200px; // Удалить
-    width: 100%; // Удалить
-                    margin-bottom: 10px;
-    border: 1px solid @main; // Удалить
+    position: relative;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    fill: @white;
+    .transition (all 0.3s);
 }
 
 .slide__btns {
     margin: 0 auto;
 }
 
-.slide__btn {
+.btn {
+    display: block;
     float: left;
     box-sizing: border-box;
     width: 165px;
     height: 40px;
     margin: 0 auto;
-    // margin-right: 10px;
     padding: 10px;
-    color: #fff;
+    .font_header;
+    font-size: 14px;
+    line-height: 20px;
+    color: @white;
     text-align: center;
-    cursor: pointer;
-    border-radius: 2px;
+    text-transform: uppercase;
     border: 1px solid @white;
+    border-radius: 2px;
+    cursor: pointer;
     .transition (all 0.3s);
     &:hover {
         border-color: @main;
-        a {
-            color: @main;
-        }
+    color: @main;
     }
 }
 
-.slide__btn_prev {
+.btn_prev {
     float: left;
 }
 
-.slide__btn_contact {
+.btn_next {
+    float: right;
+}
+
+.btn_contact {
     float: none;
     width: 240px;
     border: 1px solid @main;
@@ -117,17 +150,6 @@ a {
     }
 }
 
-.slide__btn_next {
-    float: right;
-}
-
-.slide__btn a {
-    display: block;
-    color: @white;
-    line-height: 18px;
-    text-transform: uppercase;
-    .transition (all 0.3s);
-}
 
 @media @mobile {
     #fp-nav {
