@@ -67,7 +67,7 @@
 
 			</div>
 
-			<a href="#" class="btn btn_header btn_contact">Связаться</a>
+			<a href="javascript:PopUpShow()" class="btn btn_header btn_contact">Связаться</a>
 
 			<button class="menu__btn">
 				<i class="i_top"></i>
@@ -91,7 +91,7 @@
 
 					<div class="section__desc">
 						<p>
-							Компания Solution P создана коллективом профи, имеющих многолетний опыт в сфере рекламных и маркетинговых услуг. Объединив специалистов и профессионалов  рекламного дела мы создали удобную для клиента среду работы, позволяющую выработать наилучшее решение в реализации проектов практически любой сложности и масштаба.
+							Компания Solution P создана коллективом профи, имеющих многолетний опыт в сфере рекламных и маркетинговых услуг. Объединив специалистов и профессионалов рекламного дела, мы создали удобную для клиента среду работы, позволяющую выработать наилучшее решение в реализации проектов практически любой сложности и масштаба.
 						</p>
 					</div>
 
@@ -431,21 +431,42 @@
 
 	</div>
 
+	<div class="popup" id="popup1">
+
+	    <div class="popup-content">
+	        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, possimus.
+			<a href="javascript:PopUpHide()">Close</a>
+	    </div>
+
+	</div>
+
 </div>
 
 <script src="./js/jquery.min.js"></script>
 <script src="./js/jquery.fullPage.js"></script>
-<script type="text/javascript">
+<script type="text/javascript"> // Навигация по слайдам
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
 			menu: '#menu',
 			anchors: ['intro', 'services', 'projects', 'clients', 'partners', 'contacts'],
-			controlArrowColor: '#2cb9db',
 		});
 	});
 </script>
+<script type="text/javascript">  // Открытие попапа
+	$(document).ready(function(){
+		PopUpHide(); //Скрыть PopUp при загрузке страницы
+		// $("#popup1").addClass("hide");
+	});
+	function PopUpShow(){ //Функция отображения PopUp
+		$("#popup1").show();
+	}
+	function PopUpHide(){ //Функция скрытия PopUp
+		$("#popup1").hide();
+	}
+});
+</script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g"></script>
-<script>
+<script>  // Google maps
 	function initialize() {
 		var myLatLng = {
 			lat: 55.742036,
