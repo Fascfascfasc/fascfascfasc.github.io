@@ -205,7 +205,7 @@
 							<a href="#services/event" class="btn btn_next">Event</a>
 						</div>
 
-						<a href="#" class="btn btn_contact">Оставить заявку на участие</a>
+						<a href="javascript:PopUpShow()" class="btn btn_contact">Оставить заявку на участие</a>
 
 					</div>
 
@@ -253,7 +253,7 @@
 							<a href="#services/creative" class="btn btn_next">Creative</a>
 						</div>
 
-						<a href="#" class="btn btn_contact">Оставить заявку на участие</a>
+						<a href="javascript:PopUpShow()" class="btn btn_contact">Оставить заявку на участие</a>
 
 					</div>
 
@@ -302,7 +302,7 @@
 							<a href="#services/digital" class="btn btn_next">Digital</a>
 						</div>
 
-						<a href="#" class="btn btn_contact">Оставить заявку на участие</a>
+						<a href="javascript:PopUpShow()" class="btn btn_contact">Оставить заявку на участие</a>
 
 					</div>
 
@@ -350,7 +350,7 @@
 							<a href="#services/services" class="btn btn_next">Услуги</a>
 						</div>
 
-						<a href="#" class="btn btn_contact">Оставить заявку на участие</a>
+						<a href="javascript:PopUpShow()" class="btn btn_contact">Оставить заявку на участие</a>
 
 					</div>
 
@@ -372,9 +372,9 @@
 					<h2 class="section__header">Промо-акции и спецпроекты</h2>
 
 					<p class="section__desc">
-						П оможем организовать промо-акции и провести спецпроекты любой сложности по индивидумальным требованиям и запросам. Если у вас нестандартная задача, свяжитесь с нами и мы предложим творческое решение вашей бизнес-задачи.</p>
+						Поможем организовать промо-акции и провести спецпроекты любой сложности по индивидумальным требованиям и запросам. Если у вас нестандартная задача, свяжитесь с нами и мы предложим творческое решение вашей бизнес-задачи.</p>
 
-					<a href="#" class="btn btn_contact">Оставить заявку на участие</a>
+					<a href="javascript:PopUpShow()" class="btn btn_contact">Оставить заявку на участие</a>
 
 				</div>
 
@@ -443,7 +443,9 @@
 </div>
 
 <script src="./js/jquery.min.js"></script>
+
 <script src="./js/jquery.fullPage.js"></script>
+
 <script type="text/javascript"> // Навигация по слайдам
 	$(document).ready(function() {
 		$('#fullpage').fullpage({
@@ -452,6 +454,7 @@
 		});
 	});
 </script>
+
 <script type="text/javascript">  // Открытие попапа
 	$(document).ready(function(){
 		PopUpHide(); //Скрыть PopUp при загрузке страницы
@@ -462,24 +465,23 @@
 	}
 	function PopUpHide(){ //Функция скрытия PopUp
 		$("#popup1").hide();
-	}
-});
+	};
 </script>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g"></script>
+
 <script>  // Google maps
 	function initialize() {
 		var myLatLng = {
 			lat: 55.742036,
 			lng: 37.503581
 		};
-
 		// Create a map object and specify the DOM element for display
 		var map = new google.maps.Map(document.getElementById('map'), {
 			center: myLatLng,
 			scrollwheel: false,
 			zoom: 15
 		});
-
 		// Create a marker and set its position
 		var marker = new google.maps.Marker ({
 			map: map,
