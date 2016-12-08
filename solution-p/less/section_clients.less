@@ -2,8 +2,53 @@
 
 
 .section_clients {
-    background-color: @bg - 100;
+    background-color: @bg;
     color: @white;
+}
+
+.section_clients .section__header {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.client {
+    float: left;
+    position: relative;
+    width: 25%;
+    width: 33.333%;
+}
+
+.client__img {
+    margin: 15px 0;
+    .opacity (0.6);
+    .transition (all 0.3s);
+}
+
+.client__img_hover {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 15px;
+    .opacity (0);
+    .transition (all 0.3s);
+}
+
+.client__img:hover {
+    .opacity (1);
+    .transition (all 0.3s);
+    .img_white {
+        .opacity (0);
+        .transition (all 0.3s);
+    }
+    .client__img_hover {
+        .opacity (1);
+        .transition (all 0.3s);
+    }
 }
 
 

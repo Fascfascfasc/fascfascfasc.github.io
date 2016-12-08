@@ -2,9 +2,54 @@
 
 
 .section_partners {
-    background-color: @bg;
+    background-color: #468cd4;
     color: @white;
 }
+
+.section_partners .section__header {
+    position: absolute;
+    top: 100px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.partner {
+    float: left;
+    position: relative;
+    width: 33.333%;
+}
+
+.partner__img {
+    margin: 15px 0;
+    .opacity (0.6);
+    .transition (all 0.3s);
+}
+
+.partner__img_hover {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    left: 0;
+    top: 15px;
+    .opacity (0);
+    .transition (all 0.3s);
+}
+
+.partner__img:hover {
+    .opacity (1);
+    .transition (all 0.3s);
+    .img_white {
+        .opacity (0);
+        .transition (all 0.3s);
+    }
+    .partner__img_hover {
+        .opacity (1);
+        .transition (all 0.3s);
+    }
+}
+
 
 
 /*  E N D  O F  section_partners.less  */
