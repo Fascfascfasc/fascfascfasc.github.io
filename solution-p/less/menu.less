@@ -19,9 +19,11 @@
     position: relative;
     float: left;
     left: -50%;
-    margin-right: 25px;
+    margin-right: 30px;
+    padding-bottom: 2px;
     text-transform: uppercase;
-    .transition (opacity 0.3s);
+    border-bottom: 1px solid transparent;
+    .transition (all 0.3s);
     &.active::before {
         content: '';
         position: absolute;
@@ -35,8 +37,8 @@
         .transition (background-color 0.3s);
     }
     &:not(.active):hover {
-        opacity: 0.6;
-        .transition (opacity 0.3s);
+        border-bottom: 1px solid rgba(0,187,210,0.5);
+        .transition (all 0.3s);
     }
     & a {
         display: block;
@@ -47,14 +49,18 @@
     }
 }
 
+#menu li:last-child {
+    margin-right: 0px;
+}
+
 #menu li a,
 #menu li.active a {
-    padding: 5px 10px;
+    // padding: 5px 10px;
 }
 
 #menu li.active a {
     color: @main;
-    opacity: 0.6;
+    opacity: 0.7;
     .transition (opacity 0.3s);
 }
 
@@ -159,16 +165,16 @@
 
 @media @pre-tablet {
     #menu {
-        margin-top: 35px;
+        margin-top: 40px;
     }
     #menu li {
-        margin-right: 0px;
+        margin-right: 15px;
     }
 }
 
 @media @tablet {
     #menu li {
-        margin-right: 10px;
+        margin-right: 25px;
     }
 }
 
