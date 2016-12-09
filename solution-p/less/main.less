@@ -27,7 +27,7 @@ a {
 .section__inner {
     max-width: 1180px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 20px;
 }
 
 .section__header { // Может нафиг не нужен, а обойтись .slide__header ?
@@ -160,6 +160,12 @@ a {
 
 @media @mobile {
     #fp-nav {
+        display: none;
+    }
+    .feature {
+        width: 100%;
+    }
+    .slide__btns {
         display: none;
     }
 }

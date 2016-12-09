@@ -213,7 +213,7 @@ a {
 .section__inner {
   max-width: 1180px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 20px;
 }
 .section__header {
   margin-top: 50px;
@@ -361,6 +361,12 @@ a {
 }
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   #fp-nav {
+    display: none;
+  }
+  .feature {
+    width: 100%;
+  }
+  .slide__btns {
     display: none;
   }
 }
@@ -977,6 +983,11 @@ a {
 .img_color {
   width: 100%;
   max-width: 323px;
+}
+@media only screen and (min-width: 320px) and (max-width: 699px) {
+  .client {
+    width: 50%;
+  }
 }
 /*  E N D  O F  section_clients.less  */
 /*  S T A R T  O F  section_partners.less  */
