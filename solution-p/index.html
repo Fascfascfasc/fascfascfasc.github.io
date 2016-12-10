@@ -115,7 +115,7 @@
 					<div class="btns">
 						<a href="#services/production" onclick="PopUpShow_service-popup()" class="btn btn_production">Подробнее о production</a>
 					</div>
-					<div class="services_popups">
+					<!-- <div id="popup3" class="popup popup_services hide">
 						<div id="slide1" class="slide slide_intro" data-anchor="services">
 							<div class="slide__inner">
 							</div>
@@ -265,7 +265,7 @@
 								<a href="javascript:PopUpShow()" class="btn btn_contact">Оставить заявку на участие</a>
 							</div>
 						</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 			<!-- Проекты -->
@@ -466,11 +466,11 @@
 			</div>
 		</div>
 	</div>
-	<div id="popup1" class="popup_menu hide">
+	<div id="popup1" class="popup popup_menu hide">
         Меню меню меню меню меню
 		<span onclick="PopUpHide()" class="btn btn_close">Close</span>
 	</div>
-	<div id="popup2" class="popup_contacts hide">
+	<div id="popup2" class="popup popup_contacts hide">
 	    <div class="popup-content">
 	        Контактная форма форма форма форма
 			<span onclick="PopUpHide()" class="btn btn_close">Close</span>
@@ -493,6 +493,9 @@
 	}
 	function PopUpShow_contacts(){
 		$("#popup2").removeClass("hide");
+	}
+	function PopUpShow_contacts(){
+		$("#popup3").removeClass("hide");
 	}
 	// Cкрытие попапа
 	function PopUpHide(){

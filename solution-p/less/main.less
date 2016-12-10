@@ -35,6 +35,43 @@ body {
     .font_main;
 }
 
+.popup {
+    visibility: visible;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 200;
+    .transition (all 0.3s);
+}
+
+
+
+.popup_contacts {
+    background-color: rgba(0,0,0,0.5);
+}
+.popup-content {
+    width: 80%;
+    height: 80%;
+    min-height: 600px;
+    margin: 40px auto 0px auto;
+    padding: 10px;
+    background-color: @white;
+}
+.btn_close {
+    cursor: pointer;
+    border: 1px solid @black;
+    color: @black;
+}
+
+.popup_menu {
+    background-color: rgba(14,51,60,0.95);
+}
+
+
+
+
+
 
 .hide {
     visibility: hidden !important;

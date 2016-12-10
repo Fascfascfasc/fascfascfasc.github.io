@@ -238,6 +238,38 @@ body {
   hyphens: auto;
   word-wrap: break-word;
 }
+.popup {
+  visibility: visible;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  z-index: 200;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.popup_contacts {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  width: 80%;
+  height: 80%;
+  min-height: 600px;
+  margin: 40px auto 0px auto;
+  padding: 10px;
+  background-color: #ffffff;
+}
+.btn_close {
+  cursor: pointer;
+  border: 1px solid #000000;
+  color: #000000;
+}
+.popup_menu {
+  background-color: rgba(14, 51, 60, 0.95);
+}
 .hide {
   visibility: hidden !important;
   -webkit-opacity: 0;
@@ -697,7 +729,7 @@ a {
 }
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   .section_intro .section__desc {
-    padding-bottom: 70px;
+    padding-bottom: 40px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 929px) {
@@ -793,7 +825,7 @@ a {
   float: none;
   margin: 0 auto;
   width: 100%;
-  max-width: 250;
+  max-width: 250px;
 }
 .slide_production {
   background-image: url(../img/bg_production.jpg);
@@ -853,6 +885,9 @@ a {
   }
   .section_services .section__desc {
     padding-bottom: 20px;
+  }
+  .section_services .btn_production {
+    max-width: 100%;
   }
   .section_services .slide__features {
     margin-bottom: 20px;
@@ -1108,34 +1143,17 @@ a {
 /*  E N D  O F  main.less  */
 /*  S T A R T  O F  popup_menu.less  */
 .popup_menu {
-  visibility: visible;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
   background-color: rgba(14, 51, 60, 0.95);
-  z-index: 200;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 /*  E N D  O F  popup_menu.less  */
+/*  S T A R T  O F  popup_services.less  */
+.popup_services {
+  background-color: rgba(14, 51, 60, 0.95);
+}
+/*  E N D  O F  popup_services.less  */
 /*  S T A R T  O F  contacts-pop-up.less  */
 .popup_contacts {
-  visibility: visible;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0px;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  -ms-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
 }
 .popup-content {
   width: 80%;
