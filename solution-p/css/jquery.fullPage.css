@@ -5,7 +5,7 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
- 
+
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -131,11 +131,11 @@ html.fp-enabled,
 }
 
 #fp-nav.right {
-    right: 17px;
+    right: 10px;
 }
 
 #fp-nav.left {
-    left: 17px;
+    left: 10px;
 }
 
 .fp-slidesNav {

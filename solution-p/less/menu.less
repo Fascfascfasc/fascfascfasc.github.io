@@ -4,15 +4,15 @@
 .header__menu {
     width: 600px;
     margin: 0 auto;
-    background-color: #444;
 }
 
 #menu {
     position: relative;
     float: left;
     left: 50%;
-    margin-top: 45px;
+    margin-top: 15px;
     z-index: 70;
+    // background-color: #444; // Удалить
 }
 
 #menu li {
@@ -48,22 +48,18 @@
         .transition (color 0.3s);
     }
 }
-
 #menu li:last-child {
     margin-right: 0px;
 }
-
 #menu li a,
 #menu li.active a {
     // padding: 5px 10px;
 }
-
 #menu li.active a {
     color: @main;
     opacity: 0.7;
     .transition (opacity 0.3s);
 }
-
 #menu li.active a:hover {
     // opacity: 1;
     // .transition (opacity 0.3s);
@@ -73,8 +69,7 @@
     display: none;
     float: right;
     width: 30px;
-    margin-right: 20px;
-    margin-top: 25px;
+    margin-top: 11px;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -110,12 +105,10 @@
     // }
 }
 
-
-.fp-viewing-clients- i {
+.fp-viewing-clients i {
     background-color: @white;
 }
-
-.fp-viewing-clients- #menu li {
+.fp-viewing-clients #menu li {
     & a {
         color: @white;
     }
@@ -124,12 +117,10 @@
     }
 }
 
-
-.fp-viewing-partners- i {
+.fp-viewing-partners i {
     background-color: @white;
 }
-
-.fp-viewing-partners- #menu li {
+.fp-viewing-partners #menu li {
     & a {
         color: @white;
     }
@@ -137,12 +128,10 @@
         background-color: @white;
     }
 }
-
 
 .fp-viewing-contacts i {
     background-color: @white;
 }
-
 .fp-viewing-contacts #menu li {
     & a {
         color: @white;
@@ -151,7 +140,6 @@
         background-color: @white;
     }
 }
-
 
 @media @mobile {
     .header__menu {
@@ -163,11 +151,11 @@
 }
 
 @media @pre-tablet {
-    #menu {
-        margin-top: 40px;
+    .header__menu {
+        width: 400px;
     }
     #menu li {
-        margin-right: 15px;
+        margin-right: 13px;
     }
 }
 

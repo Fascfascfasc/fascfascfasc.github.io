@@ -4,68 +4,60 @@
 .header {
     position: fixed;
     width: 100%;
-    height: 116px;
-    .gradient (@startColor: rgba(0,0,0,0.6), @endColor: rgba(255,255,255,0));
-    .transition (all 1s);
     z-index: 1000;
 }
-
-.fp-viewing-intro .header {
-    .gradient (@startColor: rgba(0,0,0,0), @endColor: rgba(255,255,255,0));
-    .transition (all 0s);
+.header_gradient {
+    position: absolute;
+    width: 100%;
+    height: 116px;
+    .gradient (@startColor: rgba(0,0,0,0.75), @endColor: rgba(255,255,255,0));
+    .opacity (1);
+    .transition (all 1s);
 }
-
 .header__inner {
     position: relative;
     max-width: 1180px;
+    padding: 28px 40px 0px;
     margin: 0 auto;
+    overflow: hidden;
 }
-
 
 .logo_header {
     position: relative;
     float: left;
-    margin-top: 28px;
-    margin-left: 30px;
     z-index: 1000;
 }
-
 .logo__img_header {
-    visibility: visible;
     width: 128px;
     .opacity (1);
-    .transition (all 1s);
+    .transition (all 2s);
+    z-index: 0;
 }
-
-.fp-viewing-intro .logo__img_header,
-.fp-viewing-intro .btn_header {
-    visibility: hidden;
-    .opacity (1);
-    .transition (all 0s);
-    // z-index: -10000;
-}
-
 
 .btn_header {
     visibility: visible;
-    float: right;
     position: relative;
-    margin-right: 30px;
-    margin-top: 30px;
+    float: right;
     width: 110px;
+    margin-top: 3px;
     z-index: 100;
     .opacity (1);
     .transition (all 1s);
 }
 
+.fp-viewing-intro {
+    .header_gradient,
+    .logo__img_header,
+    .btn_header {
+        .opacity (0);
+        .transition (all 0.3s);
+        z-index: -100;
+    }
+}
 
 @media @mobile {
-    .fp-viewing-intro .header {
-        opacity: 0;
-    }
-    .logo_header {
-        margin-top: 20px;
-        margin-left: 20px;
+    .header__inner {
+        padding: 20px 20px 0px;
     }
     .logo__img_header {
         width: 87px;
@@ -79,21 +71,11 @@
     .logo__img_header {
         width: 87px;
     }
-    .btn_header {
-        margin-top: 25px;
-    }
 }
 
 @media @tablet {
-    display: ;
+
 }
 
-// Попытка отобразить хедер при отключенном fp.js
-@media only screen and (min-height: 550px) {
-    .logo__img_header {
-        position: absolute;
-        opacity: 1;
-    }
-}
 
 /*  E N D  O F  header.less  */

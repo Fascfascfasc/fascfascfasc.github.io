@@ -1,28 +1,17 @@
 /*  S T A R T  O F  contacts-pop-up.less  */
 
-.hide {
-    display: none;
-}
 
-.popup {
-    visibility: hidden;
+.popup_contacts {
+    visibility: visible;
     position: fixed;
-    overflow: hidden;
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     top: 0px;
     background-color: rgba(0,0,0,0.5);
     z-index: 1000;
-    .opacity (0);
+    // .opacity (0);
     .transition (all 0.3s);
 }
-
-.show {
-    visibility: visible;
-    .opacity (1);
-    .transition (all 0.3s);
-}
-
 .popup-content {
     width: 80%;
     height: 80%;
@@ -31,12 +20,11 @@
     padding: 10px;
     background-color: @white;
 }
-
-
 .btn_close {
     cursor: pointer;
     border: 1px solid @black;
     color: @black;
 }
+
 
 // /*  E N D  O F  contacts-pop-up.less  */
