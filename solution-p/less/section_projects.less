@@ -7,13 +7,32 @@
     background-size: cover;
     color: @white;
 }
-
 .projects_icon {
     position: relative;
-    height: 200px;
+    height: 176px;
 }
-.img_projects {
+.projects_img {
     width: 175px;
+}
+.btn_contact {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 280px;
+}
+
+@media @mobile {
+    .section_projects {
+        .projects_icon {
+            padding-top: 20px;
+        }
+        .section__header {
+            padding-top: 10px;
+        }
+        .section__desc {
+            padding-top: 10px;
+        }
+    }
 }
 
 

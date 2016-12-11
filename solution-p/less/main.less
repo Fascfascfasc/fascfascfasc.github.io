@@ -31,48 +31,23 @@ body {
 .section__desc {
     margin: 0 auto;
     padding: 20px 3px 40px;
-    max-width: 700px;
+    max-width: 600px;
     .font_main;
 }
 
 .popup {
     visibility: visible;
-    position: fixed;
+    position: ab;
     width: 100%;
     height: 100%;
     top: 0px;
     z-index: 200;
     .transition (all 0.3s);
 }
-
-
-
-.popup_contacts {
-    background-color: rgba(0,0,0,0.5);
-}
-.popup-content {
-    width: 80%;
-    height: 80%;
-    min-height: 600px;
-    margin: 40px auto 0px auto;
-    padding: 10px;
+.popup__inner {
+    padding: 20px;
     background-color: @white;
 }
-.btn_close {
-    cursor: pointer;
-    border: 1px solid @black;
-    color: @black;
-}
-
-.popup_menu {
-    background-color: rgba(14,51,60,0.95);
-}
-
-
-
-
-
-
 .hide {
     visibility: hidden !important;
     .opacity (0);
@@ -81,10 +56,26 @@ body {
 
 
 
+.screen {
+    // box-sizing: border-box;
+    // padding: 0 30px;
+    background-color: #edf0f0;
+    background-color: #4f3b1a;
+    background-position: center;
+    background-size: cover;
+}
 
+.slide__inner {
+    margin: 0 auto;
+    max-width: 700px;
+}
 
-
-
+.slide__header {
+    margin-top: 150px;
+    margin-bottom: 50px;
+    .font_header;
+    font-size: 34px;
+}
 
 .icon {
     position: absolute;
@@ -97,54 +88,15 @@ body {
     .transition (all 0.3s);
 }
 
-
-
-
-
-
-
-.slide {
-    // box-sizing: border-box;
-    // padding: 0 30px;
-    background-color: #edf0f0;
-    background-position: center;
-    background-size: cover;
-}
-
-.slide__inner {
-    margin: 0 auto;
-    max-width: 700px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.slide__header {
-    margin-top: 150px;
-    margin-bottom: 50px;
-    .font_header;
-    font-size: 34px;
-}
-
 #fullPage-nav li a,
 #menu li a,
 a {
     text-decoration: none;
 }
 
-
-
 .btns {
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 15px 0 0;
 }
 .btn {
     display: block;
@@ -189,6 +141,13 @@ a {
         }
     }
 }
+.btn_popup-close {
+    margin-top: 20px;
+    border: 1px solid @black;
+    color: @black;
+    cursor: pointer;
+    z-index: 500;
+}
 
 @media @mobile {
     #fp-nav {
@@ -196,6 +155,9 @@ a {
     }
     .section__inner {
         padding: 0 20px;
+    }
+    .section__desc {
+        padding-bottom: 20px;
     }
     .feature {
         width: 100%;

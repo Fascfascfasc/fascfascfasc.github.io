@@ -2,13 +2,20 @@
 
 
 .section_services {
-    min-height: 660px;
+    // min-height: 660px;
     color: @white;
     background-image: url(../img/bg_sec_serv.jpg);
+    .section__header {
+        padding-top: 40px;
+    }
+    .section__desc {
+        padding-top: 10px;
+    }
 }
 .services {
     max-width: 600px;
     margin: 0 auto;
+    padding-bottom: 25px;
 }
 .service {
     float: left;
@@ -60,116 +67,18 @@
     float: none;
     margin: 0 auto;
     width: 100%;
-    max-width: 250px;
+    max-width: 280px;
 }
-
-
-
-
-
-
-
-.slide_production {
-    background-image: url(../img/bg_production.jpg);
-}
-.feature__img_souvenir {
-    width: 58px;
-}
-.feature__img_outdoor {
-    width: 53px;
-}
-.feature__img_textile {
-    width: 76px;
-}
-
-.slide_event {
-    background-image: url(../img/bg_event.jpg);
-}
-.feature__img_private {
-    width: 84px;
-}
-.feature__img_corporate {
-    width: 97px;
-}
-.feature__img_public {
-    width: 94px;
-}
-
-.slide_creative {
-    background-image: url(../img/bg_creative.jpg);
-}
-.feature__img_style {
-    width: 82px;
-}
-.feature__img_graph {
-    width: 86px;
-}
-.feature__img_branding {
-    width: 82px;
-}
-
-.slide_digital {
-    background-image: url(../img/bg_digital.jpg);
-}
-.feature__img_web {
-    width: 86px;
-}
-.feature__img_apps {
-    width: 81px;
-}
-.feature__img_video {
-    width: 83px;
-    stroke: @white;
-}
-
 
 @media @mobile {
     .section_services {
         .services {
             max-width: 400px;
+            padding-bottom: 15px;
         }
         .service {
             width: 50%;
         }
-        .section__desc {
-            padding-bottom: 20px;
-        }
-
-        .btn_production {
-            max-width: 100%;
-        }
-
-
-
-        .slide__features {
-            margin-bottom: 20px;
-        }
-        .slide__header {
-            margin-top: 30px;
-            margin-bottom: 8px;
-        }
-        .slide_intro .feature {
-            width: 40%;
-            margin-bottom: 15px;
-        }
-        .feature__title {
-            font-size: 18px;
-        }
-        .feature__img {
-            margin-bottom: 10px;
-        }
-    }
-}
-
-@media @pre-tablet {
-    .section_services .slide__header {
-        // margin-top: 100px;
-    }
-    .section_services .section__desc {
-        // margin-bottom: 40px;
-    }
-    .slide__features {
-        // margin-bottom: 30px;
     }
 }
 
