@@ -21,7 +21,6 @@ body {
     margin: 0 auto;
     padding: 0 40px;
     text-align: center;
-    // background-color: #ff8888; // Удалить
 }
 .section__header {
     padding-top: 30px;
@@ -37,16 +36,18 @@ body {
 
 .popup {
     visibility: visible;
-    position: ab;
+    position: fixed;
     width: 100%;
     height: 100%;
     top: 0px;
-    z-index: 200;
+    z-index: 500;
     .transition (all 0.3s);
 }
 .popup__inner {
+    height: 100%;
+    max-width: 1180px;
+    min-height: 100%;
     padding: 20px;
-    background-color: @white;
 }
 .hide {
     visibility: hidden !important;
@@ -56,9 +57,9 @@ body {
 
 
 
+
+
 .screen {
-    // box-sizing: border-box;
-    // padding: 0 30px;
     background-color: #edf0f0;
     background-color: #4f3b1a;
     background-position: center;
@@ -128,7 +129,10 @@ a {
 }
 .btn_contact {
     float: none;
-    width: 240px;
+    margin: 0 auto;
+    width: 240px; // Удалить
+    width: 100%;
+    max-width: 280px;
     border: 1px solid @main;
     background-color: @main;
     .transition (all 0.3s);
@@ -142,11 +146,16 @@ a {
     }
 }
 .btn_popup-close {
-    margin-top: 20px;
-    border: 1px solid @black;
-    color: @black;
-    cursor: pointer;
-    z-index: 500;
+    content: '';
+    position: absolute;
+    display: block;
+    top: 25px;
+    right: 20px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-image: url(../img/cross.svg);
+    background-size: contain;
 }
 
 @media @mobile {
