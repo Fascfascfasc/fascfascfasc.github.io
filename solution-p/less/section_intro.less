@@ -1,4 +1,4 @@
-// main: ../less/style.less
+// main: ../less/main.less
 /*  S T A R T  O F  section_intro.less  */
 
 
@@ -18,7 +18,6 @@
     position: absolute;
     height: 75px;
     padding-top: 30px;
-    // padding-bottom: 70px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -27,6 +26,7 @@
     .font_header;
     text-transform: uppercase;
     .gradient (@startColor: rgba(255,255,255,0), @endColor: rgba(0,0,0,0.4));
+    .transition (all 0.3s);
     &::before {
         content: '';
         position: absolute;
@@ -34,7 +34,11 @@
         margin-left: 35px;
         width: 30px;
         height: 16px;
-        background-image: url(../img/arrow_down.png);
+        background-image: url(../img/arrow_down.svg);
+    }
+    &:hover::before {
+        margin-top: 40px;
+        .transition (all 0.3s);
     }
 }
 
@@ -46,15 +50,13 @@
 
 @media @pre-tablet {
     .logo__img {
-        // width: 238px; // Такой размер в макете
-        width: 225px; // Это будет 0,5 от оригинала (450)
+        width: 225px; // Это 0,5 от оригинала (450)
     }
 }
 
 @media @tablet {
     .logo__img {
-        // width: 380px; // Такой размер в макете
-        width: 360px; // Это будет 0,8 от оригинала (450)
+        width: 360px; // Это 0,8 от оригинала (450)
     }
 }
 

@@ -1,9 +1,9 @@
-// main: ../less/style.less
+// main: ../less/main.less
 /*  S T A R T  O F  popup_contacts.less  */
 
 
 .popup_contacts {
-    background-color: rgba(0,0,0,0.5);
+    background-color: @white;
 }
 .popup_contacts .popup__inner {
     padding: 10px;
@@ -41,9 +41,16 @@
     text-align: center;
     color: @white;
     background-color: @main;
+    .transition (all 0.3s);
     &:hover {
-        // .transition (all 0.3s);
         border: 1px solid @main;
+        .transition (all 0.3s);
+    }
+}
+.popup_contacts .btn_close {
+    background-image: url(../img/cross_blue.svg);
+    &:hover {
+        // background-image: url(../img/cross_white.svg);
     }
 }
 

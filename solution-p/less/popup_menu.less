@@ -1,21 +1,33 @@
-// main: ../less/style.less
+// main: ../less/main.less
 /*  S T A R T  O F  popup_menu.less  */
 
 
 .popup_menu {
-    background-color: rgba(14,51,60,0.95);
+    min-height: 530px;
 }
-.popup_menu .logo_header {
-    z-index: 1000;
+.popup_menu .popup__inner {
+    overflow: scroll;
+    background-color: rgba(14,51,60,0.95);
 }
 .popup__menu-item {
     .font_header;
     font-size: 30px;
-    color: @white;
     margin-bottom: 20px;
+    .menu__link {
+    color: @white;
+    .transition (all 0.3s)
+    }
+    &:hover .menu__link {
+        color: @main;
+        .transition (all 0.3s)
+    }
+    .menu__link:nth-last-child(1) {
+        margin-bottom: 20px;
+    }
 }
-.popup__menu-item:first-child {
-    margin-top: 60px;
+.popup_menu .btn_blue {
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 
 /*  E N D  O F  popup_menu.less  */
