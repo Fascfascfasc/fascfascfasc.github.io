@@ -10,6 +10,9 @@
 // @retina: (min-resolution: 192dpi) and (min-resolution: 2dppx)";
 
 // Fonts
+.font-default(@size: 18px, @line: 21px ) {
+    font: @size/@line 'FuturaNewBook', Arial, sans-serif;
+}
 .font_main {
     font-family: 'FuturaNewBook', sans-serif;
     font-size: 18px;
@@ -31,6 +34,25 @@
 @black: #000000;
 @main: #2cb9db;
 @bg: #4dbcd2;
+@blue: #00bbd2; // Из проекта Solution P
+@red: #d24a43; // Из проекта Solution P
 
+// Mixins
+.fullfake() {
+	content: '';
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.center-line {
+    position: absolute;
+    margin: 0 50%;
+    width: 1px;
+    height: 100%;
+    z-index: 100;
+    background-color: red;
+} // Удалить
 
 /*  E N D  O F  variables.less  */

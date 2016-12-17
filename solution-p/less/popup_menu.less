@@ -3,7 +3,8 @@
 
 
 .popup_menu {
-    min-height: 530px;
+    // min-height: 550px;
+    overflow: scroll;
 }
 .popup_menu .popup__inner {
     overflow: scroll;
@@ -13,9 +14,11 @@
     .font_header;
     font-size: 30px;
     margin-bottom: 20px;
+    overflow: hidden;
     .menu__link {
-    color: @white;
-    .transition (all 0.3s)
+        display: block;
+        color: @white;
+        .transition (all 0.3s);
     }
     &:hover .menu__link {
         color: @main;
@@ -28,6 +31,11 @@
 .popup_menu .btn_blue {
     margin-top: 40px;
     margin-bottom: 20px;
+}
+@media @mobile {
+    .popup_menu .btn_blue {
+        margin-top: 0;
+    }
 }
 
 /*  E N D  O F  popup_menu.less  */

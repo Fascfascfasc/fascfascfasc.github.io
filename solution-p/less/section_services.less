@@ -17,12 +17,16 @@
     max-width: 600px;
     margin: 0 auto;
     padding-bottom: 25px;
+    overflow: hidden;
 }
-.service {
+.service__block {
     float: left;
     width: 25%;
-    color: @white;
     margin-bottom: 15px;
+}
+.service {
+    display: inline-block;
+    color: @white;
 }
 .service_link:hover {
     color: @main;
@@ -67,12 +71,12 @@
 
 @media @mobile {
     .section_services {
-        .services {
+        .service__block {
+            width: 50%;
             max-width: 400px;
             padding-bottom: 15px;
         }
         .service {
-            width: 50%;
         }
     }
 }
