@@ -1102,7 +1102,7 @@ div.wpcf7 img.ajax-loader {
   box-sizing: border-box;
   width: 32.333%;
   margin: 0 auto;
-  padding: 0 5px;
+  padding: 5px;
 }
 .client__img {
   position: relative;
@@ -1177,7 +1177,7 @@ div.wpcf7 img.ajax-loader {
     padding-top: 10px;
   }
   .client {
-    width: 49.3%;
+    width: 49%;
   }
 }
 /*  E N D  O F  section_clients.less  */
@@ -1271,7 +1271,7 @@ div.wpcf7 img.ajax-loader {
     padding-top: 10px;
   }
   .partner {
-    width: 49.3%;
+    width: 49%;
   }
 }
 /*  E N D  O F  section_partners.less  */
