@@ -39,6 +39,16 @@
 @red: #d24a43; // Из проекта Solution P
 
 // Mixins
+.clearfix {
+	&:before,
+	&:after {
+		content: '';
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
 .fullfake() {
 	content: '';
 	width: 100%;
@@ -55,5 +65,6 @@
     z-index: 100;
     background-color: red;
 } // Удалить
+
 
 /*  E N D  O F  variables.less  */

@@ -1,44 +1,57 @@
 // main: ../less/main.less
-/*  S T A R T  O F  popup_services.less  */
+
+// S T A R T  O F  popup_services.less
 
 
-.popup_services {
-    background-color: rgba(14,51,60,0.9);
-    padding: 20px;
-    box-sizing: border-box;
-    // width: 400%;
-}
 .popup__inner_services {
     max-width: 700px;
-    height: 100%;
-    margin: 0 auto;
 }
+
 .popup_services .btn {
     float: right;
 }
 .popup_services .btn_close {
-    right: 60px;
+    position: fixed;
+    right: 30px;
+    top: 30px;
+}
+
+.popup_services .popup__header {
+    margin-top: 70px;
+    padding: 20px;
+    font-size: 34px;
+    .font_header;
+}
+.popup_services .features {
+    display: block;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
 }
 .popup_services .feature {
     display: inline-block;
-    width: 25%;
-    height: 100px;
-    margin-bottom: 15px;
-    text-align: center;
-    color: @white;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 5px;
 }
 .feature__img {
+    margin-bottom: 5px;
     position: relative;
     height: 100%;
 }
-
-.slide__header {
-    margin-top: 70px;
+.icon {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    fill: @white;
+    .transition (all 0.3s);
+}
+.feature__title {
 }
 
-.slide_production {
-    background-image: url(../img/bg_production.jpg);
-}
 .feature__img_souvenir {
     width: 58px;
 }
@@ -49,9 +62,6 @@
     width: 76px;
 }
 
-.slide_event {
-    // background-image: url(../img/bg_event.jpg);
-}
 .feature__img_private {
     width: 84px;
 }
@@ -62,9 +72,6 @@
     width: 94px;
 }
 
-.slide_creative {
-    // background-image: url(../img/bg_creative.jpg);
-}
 .feature__img_style {
     width: 82px;
 }
@@ -75,9 +82,6 @@
     width: 82px;
 }
 
-.slide_digital {
-    // background-image: url(../img/bg_digital.jpg);
-}
 .feature__img_web {
     width: 86px;
 }
@@ -89,12 +93,16 @@
     stroke: @white;
 }
 
-
 @media @mobile {
+    .popup_services .popup__header {
+        margin-top: 0px;
+    }
+    .popup_services .features {
+        padding: 0;
+    }
     .popup_services .feature {
-        width: 100%;
-        max-width: 400px;
         height: 80px;
+        width: 100%;
     }
     .popup_services .icon {
         height: 50px;
@@ -102,8 +110,7 @@
     .slide__header {
         margin-top: 20px;
     }
-    .popup_services .feature {
-    }
 }
 
-/*  E N D  O F  popup_services.less  */
+
+//  E N D  O F  popup_services.less
