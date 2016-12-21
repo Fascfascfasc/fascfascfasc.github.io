@@ -1568,7 +1568,10 @@ div.wpcf7 img.ajax-loader {
   margin: 0 auto;
   background-color: #f00;
   text-align: center;
+<<<<<<< HEAD
   margin-bottom: 20px;
+=======
+>>>>>>> 92c4ca3... fix for popups services
 }
 .popup_services .feature {
   display: inline-block;
