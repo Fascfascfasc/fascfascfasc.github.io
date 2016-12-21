@@ -1,0 +1,223 @@
+
+
+@font-face {
+    font-family: 'ProximaNovaSemibold';
+    src: url('../fonts/ProximaNovaSemibold.otf');
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src: url('../fonts/ProximaNovaBold.otf');
+}
+@font-face {
+    font-family: 'PT Serif', serif;
+    src: url('https://fonts.googleapis.com/css?family=PT+Serif');
+ }
+
+
+body {
+    font-family: Helvetica, Arial, sans;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+.clearfix {
+    content: '.';
+    clear: both;
+}
+
+
+.section {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position: 50%;
+    background-size: cover;
+}
+
+
+.sidebar {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 500px;
+    width: 25%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 0 30px 0 48px;
+    z-index: 0;
+}
+
+
+.sidebar__header,
+.sidebar__footer {
+    position: absolute;
+    display: block;
+    left: 48px;
+    right: 30px;
+}
+
+
+.sidebar__header {
+    top: 0;
+}
+
+
+.sidebar__main {
+    display: table;
+    min-height: 100vh;
+    width: 100%;
+}
+
+
+.sidebar__footer {
+    bottom: 0;
+}
+
+
+.logo {
+    position: relative;
+    float: left;
+    width: 115px;
+    height: 43px;
+    margin-top: 40px;
+    cursor: pointer;
+    .logo__svg {
+        fill: @white;
+        transition-property: fill;
+        // .transition;
+    }
+    &:hover .logo__svg {
+        fill: @green;
+        .transition;
+    }
+}
+
+
+.menu-icon {
+    float: right;
+    margin-top: 45px;
+    cursor: pointer;
+    .menu-icon__part {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 2px;
+        margin-bottom: 8px;
+        background-color: @white;
+        transition-property: background-color;
+        .transition;
+    }
+    &:hover .menu-icon__part {
+        background-color: @green;
+        transition-property: background-color;
+        .transition;
+    }
+}
+
+
+.sidebar__main-text {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'PT Serif', serif;
+    color: @white;
+    & .header_normal {
+        display: block;
+        font-size: 17px;
+        line-height: 20px;
+    }
+    & .header_huge {
+        display: block;
+        margin-top: 20px;
+        font-family: 'ProximaNovaSemibold', sans-serif;
+        font-size: 72px;
+        line-height: 70px;
+        letter-spacing: -1px;
+    }
+}
+
+
+.icon_next-page {
+    position: relative;
+    float:left;
+    margin: 50px 0 50px 40px;
+    text-transform: uppercase;
+    color: @white;
+    transition-property: color;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-family: 'ProximaNovaBold';
+    font-size: 12px;
+    .transition;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 22px;
+        height: 11px;
+        top: 2px;
+        left: -37px;
+        background: url("../img/arrow_down.png") 0 0 no-repeat;
+        transition-property: background-color;
+        .transition;
+    }
+    &:hover {
+        color: @green;
+        transition-property: color;
+        .transition;
+        &::before {
+            background-color: @green;
+            transition-property: background-color;
+            .transition;
+        }
+    }
+}
+
+
+.button_contact-form {
+    display: block;
+    float: right;
+    box-sizing: border-box;
+    width: 200px;
+    height: 45px;;
+    margin-top: 30px;
+    margin-right: 48px;
+    text-align: center;
+    line-height: 45px;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    color: @white;
+    background-color: @black;
+    transition-property: color background-color;
+    .transition;
+    &:hover {
+        color: @black;
+        background-color: @green;
+        transition-property: color background-color;
+        .transition;
+    }
+    &:active {
+        color: lighten(@black, 3%);
+        background-color: darken(@green, 20%);
+        box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.6);
+    }
+}
+
+
+.features {
+    float: right;
+}
+
+
+.feature {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    color: @black;
+    .feature__img {
+        width: 50px;
+        height: 50px;
+    }
+}
