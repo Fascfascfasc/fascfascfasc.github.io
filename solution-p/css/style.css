@@ -215,26 +215,16 @@ h2 {
 }
 .section {
   position: relative;
-<<<<<<< HEAD
   background-color: #edf0f0;
   background-position: center;
   background-size: cover;
   color: #ffffff;
-=======
-  text-align: center;
-  background-position: center;
-  background-size: cover;
->>>>>>> eae4b2b... add contact
 }
 .section__inner {
   max-width: 1180px;
   margin: 0 auto;
-<<<<<<< HEAD
   padding: 0 40px;
   text-align: center;
-=======
-  padding: 0 20px;
->>>>>>> eae4b2b... add contact
 }
 .section__header {
   padding-top: 30px;
@@ -243,23 +233,6 @@ h2 {
   font-size: 34px;
 }
 .section__desc {
-<<<<<<< HEAD
-=======
-  max-width: 765px;
-  font-family: 'FuturaNewBook', sans-serif;
-  font-size: 19px;
-  line-height: 22px;
-  margin: 0 auto;
-  margin-bottom: 100px;
-}
-.slide {
-  box-sizing: border-box;
-  padding: 0 30px;
-  background-position: center;
-  background-size: cover;
-}
-.slide__inner {
->>>>>>> eae4b2b... add contact
   margin: 0 auto;
   padding: 20px 3px 40px;
   max-width: 600px;
@@ -303,7 +276,6 @@ h2 {
 .popup__inner {
   height: 100%;
   margin: 0 auto;
-  max-width: 1180px;
   padding: 20px;
   box-sizing: inherit;
   text-align: center;
@@ -550,19 +522,8 @@ div.wpcf7 img.ajax-loader {
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 929px) {
-<<<<<<< HEAD
 }
 /*  E N D  O F  style.less  */
-=======
-  .section__inner {
-    padding: 0 80px;
-  }
-  .slide {
-    padding: 0 80px;
-  }
-}
-/*  E N D  O F  main.less  */
->>>>>>> eae4b2b... add contact
 /*  S T A R T  O F  header.less  */
 .header {
   position: fixed;
@@ -573,7 +534,6 @@ div.wpcf7 img.ajax-loader {
   position: absolute;
   width: 100%;
   height: 116px;
-<<<<<<< HEAD
   background-color: rgba(0, 0, 0, 0.75);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(255, 255, 255, 0)));
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.75), rgba(255, 255, 255, 0));
@@ -584,36 +544,11 @@ div.wpcf7 img.ajax-loader {
   -moz-opacity: 1;
   opacity: 1;
   filter: alpha(opacity=100);
-=======
-  background-color: rgba(0, 0, 0, 0.6);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0));
->>>>>>> eae4b2b... add contact
   -webkit-transition: all 1s;
   -moz-transition: all 1s;
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
-<<<<<<< HEAD
-=======
-  z-index: 1000;
->>>>>>> eae4b2b... add contact
-}
-.fp-viewing-intro .header {
-  background-color: rgba(0, 0, 0, 0);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(255, 255, 255, 0)));
-  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
-  background: -ms-linear-gradient(top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
-  background: -o-linear-gradient(top, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0));
-  -webkit-transition: all 0s;
-  -moz-transition: all 0s;
-  -ms-transition: all 0s;
-  -o-transition: all 0s;
-  transition: all 0s;
 }
 .header__inner {
   position: relative;
@@ -632,7 +567,6 @@ div.wpcf7 img.ajax-loader {
   -webkit-opacity: 1;
   -moz-opacity: 1;
   opacity: 1;
-<<<<<<< HEAD
   filter: alpha(opacity=100);
   -webkit-transition: all 2s;
   -moz-transition: all 2s;
@@ -640,23 +574,6 @@ div.wpcf7 img.ajax-loader {
   -o-transition: all 2s;
   transition: all 2s;
   z-index: 0;
-=======
-  -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -ms-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
-}
-.fp-viewing-intro .logo__img_header {
-  -webkit-opacity: 0;
-  -moz-opacity: 0;
-  opacity: 0;
-  -webkit-transition: all 0s;
-  -moz-transition: all 0s;
-  -ms-transition: all 0s;
-  -o-transition: all 0s;
-  transition: all 0s;
->>>>>>> eae4b2b... add contact
 }
 .btn_header {
   visibility: visible;
@@ -690,17 +607,8 @@ div.wpcf7 img.ajax-loader {
   z-index: -100;
 }
 @media only screen and (min-width: 320px) and (max-width: 699px) {
-<<<<<<< HEAD
   .header__inner {
     padding: 20px 20px 0px;
-=======
-  .fp-viewing-intro .header {
-    opacity: 0;
-  }
-  .logo_header {
-    margin-top: 20px;
-    margin-left: 20px;
->>>>>>> eae4b2b... add contact
   }
   .logo__img_header {
     width: 87px;
@@ -713,21 +621,6 @@ div.wpcf7 img.ajax-loader {
   .logo__img_header {
     width: 87px;
   }
-<<<<<<< HEAD
-=======
-  .btn_header {
-    margin-top: 30px;
-  }
-}
-@media only screen and (min-width: 930px) and (max-width: 1279px) {
-  display: ;
-}
-@media only screen and (min-height: 550px) {
-  .logo__img_header {
-    position: absolute;
-    opacity: 1;
-  }
->>>>>>> eae4b2b... add contact
 }
 /*  E N D  O F  header.less  */
 /*  S T A R T  O F  menu.less  */
@@ -843,7 +736,6 @@ div.wpcf7 img.ajax-loader {
   outline: none;
   border-style: none;
 }
-<<<<<<< HEAD
 .fp-viewing-intro .menu__btn {
   -webkit-opacity: 0;
   -moz-opacity: 0;
@@ -904,35 +796,6 @@ div.wpcf7 img.ajax-loader {
 .fp-viewing-contacts .menu__item:not(.active):hover {
   border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 }
-=======
-.fp-viewing-clients i {
-  background-color: #ffffff;
-}
-.fp-viewing-clients #menu li a {
-  color: #ffffff;
-}
-.fp-viewing-clients #menu li.active::before {
-  background-color: #ffffff;
-}
-.fp-viewing-partners i {
-  background-color: #ffffff;
-}
-.fp-viewing-partners #menu li a {
-  color: #ffffff;
-}
-.fp-viewing-partners #menu li.active::before {
-  background-color: #ffffff;
-}
-.fp-viewing-contacts i {
-  background-color: #ffffff;
-}
-.fp-viewing-contacts #menu li a {
-  color: #ffffff;
-}
-.fp-viewing-contacts #menu li.active::before {
-  background-color: #ffffff;
-}
->>>>>>> eae4b2b... add contact
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   .header__menu {
     display: none;
@@ -957,13 +820,8 @@ div.wpcf7 img.ajax-loader {
 /*  E N D  O F  menu.less  */
 /*  S T A R T  O F  slide-nav.less  */
 .fp-viewing-clients #fp-nav ul li a.active span,
-<<<<<<< HEAD
 .fp-viewing-clients #fp-nav ul li:hover a.active span,
 .fp-viewing-clients .fp-slidesNav ul li a.active span,
-=======
-.fp-viewing-clients .fp-slidesNav ul li a.active span,
-.fp-viewing-clients #fp-nav ul li:hover a.active span,
->>>>>>> eae4b2b... add contact
 .fp-viewing-clients .fp-slidesNav ul li:hover a.active span {
   border: 2px solid #ffffff;
 }
@@ -989,7 +847,6 @@ div.wpcf7 img.ajax-loader {
 .fp-viewing-partners .fp-slidesNav ul li:hover a span {
   border: 2px solid #ffffff;
 }
-<<<<<<< HEAD
 .fp-viewing-contacts #fp-nav ul li a.active span,
 .fp-viewing-contacts .fp-slidesNav ul li a.active span,
 .fp-viewing-contacts #fp-nav ul li:hover a.active span,
@@ -1004,22 +861,11 @@ div.wpcf7 img.ajax-loader {
 .fp-viewing-contacts .fp-slidesNav ul li:hover a span {
   border: 2px solid #00bbd2;
 }
-=======
->>>>>>> eae4b2b... add contact
 /*  E N D  O F  mslide-nav.less  */
 /*  S T A R T  O F  section_intro.less  */
 .section_intro {
   min-height: 550px;
-<<<<<<< HEAD
   color: #000000;
-=======
-  background-color: #edf0f0;
-  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIHZpZXdCb3g9IjAgMCAxIDEiIHByZXNlcnZlQXNwZWN0UmF0aW89Im5vbmUiPjxsaW5lYXJHcmFkaWVudCBpZD0idnNnZyIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiIHgxPSI5NC4zJSIgeTE9IjEwNy4zJSIgeDI9IjUuNyUiIHkyPSItNy4zJSI+PHN0b3Agc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIiBvZmZzZXQ9IjAiLz48c3RvcCBzdG9wLWNvbG9yPSIjZGFlMGUxIiBzdG9wLW9wYWNpdHk9IjEiIG9mZnNldD0iMSIvPjwvbGluZWFyR3JhZGllbnQ+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCN2c2dnKSIgLz48L3N2Zz4=);
-  background-image: -webkit-gradient(linear, 94.3% 107.3%, 5.7% -7.3%, color-stop(0, #ffffff), color-stop(1, #dae0e1));
-  background-image: -webkit-repeating-linear-gradient(120deg, #ffffff 0%, #dae0e1 100%);
-  background-image: repeating-linear-gradient(330deg, #ffffff 0%, #dae0e1 100%);
-  background-image: -ms-repeating-linear-gradient(120deg, #ffffff 0%, #dae0e1 100%);
->>>>>>> eae4b2b... add contact
 }
 .logo__img {
   width: 180px;
@@ -1043,14 +889,11 @@ div.wpcf7 img.ajax-loader {
   background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
   background: -ms-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.4));
-<<<<<<< HEAD
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
-=======
->>>>>>> eae4b2b... add contact
 }
 .next-page-link::before {
   content: '';
@@ -1092,15 +935,10 @@ div.wpcf7 img.ajax-loader {
 /*  E N D  O F  section_intro.less  */
 /*  S T A R T  O F  section_services.less  */
 .section_services {
-<<<<<<< HEAD
   min-height: 600px;
 }
 .section_services .section__header {
   padding-top: 40px;
-=======
-  min-height: 660px;
-  color: #ffffff;
->>>>>>> eae4b2b... add contact
 }
 .section_services .section__desc {
   padding-top: 10px;
@@ -1215,7 +1053,6 @@ div.wpcf7 img.ajax-loader {
 .section_clients {
   background-color: #4dbcd2;
 }
-<<<<<<< HEAD
 .clients {
   max-width: 700px;
   padding: 20px 0;
@@ -1304,15 +1141,12 @@ div.wpcf7 img.ajax-loader {
     width: 49%;
   }
 }
-=======
->>>>>>> eae4b2b... add contact
 /*  E N D  O F  section_clients.less  */
 /*  S T A R T  O F  section_partners.less  */
 .section_partners {
   background-color: #468cd4;
   color: #ffffff;
 }
-<<<<<<< HEAD
 .partners {
   max-width: 700px;
   padding: 20px 0;
@@ -1407,14 +1241,6 @@ div.wpcf7 img.ajax-loader {
   position: relative;
   float: left;
   max-width: 278px;
-=======
-/*  E N D  O F  section_partners.less  */
-/*  S T A R T  O F  map.less  */
-.contacts {
-  position: relative;
-  float: left;
-  max-width: 378px;
->>>>>>> eae4b2b... add contact
   margin-top: 100px;
   margin-bottom: 30px;
   padding: 30px;
@@ -1425,7 +1251,6 @@ div.wpcf7 img.ajax-loader {
   -webkit-opacity: 0.8;
   -moz-opacity: 0.8;
   opacity: 0.8;
-<<<<<<< HEAD
   filter: alpha(opacity=80);
   z-index: 100;
 }
@@ -1434,25 +1259,15 @@ div.wpcf7 img.ajax-loader {
   margin-bottom: 20px;
   padding: 0;
   text-align: left;
-=======
-  z-index: 100;
-}
-.contacts .section__header {
-  margin-top: 0;
->>>>>>> eae4b2b... add contact
 }
 .contact {
   display: block;
   margin-left: 40px;
   margin-bottom: 20px;
   font-family: 'FuturaDemiC', sans-serif;
-<<<<<<< HEAD
   text-align: center;
   font-size: 21px;
   text-align: left;
-=======
-  font-size: 21px;
->>>>>>> eae4b2b... add contact
 }
 .contact::before {
   content: '';
@@ -1461,10 +1276,7 @@ div.wpcf7 img.ajax-loader {
   width: 28px;
   height: 28px;
   background-repeat: no-repeat;
-<<<<<<< HEAD
   background-size: contain;
-=======
->>>>>>> eae4b2b... add contact
 }
 .address::before {
   background-image: url(../img/icon_map.svg);
@@ -1564,27 +1376,21 @@ div.wpcf7 img.ajax-loader {
   text-align: center;
 }
 .popup_services .features {
-  display: inline-block;
+  display: block;
   margin: 0 auto;
-  background-color: #f00;
-  text-align: center;
-<<<<<<< HEAD
+  padding: 20px;
   margin-bottom: 20px;
-=======
->>>>>>> 92c4ca3... fix for popups services
 }
 .popup_services .feature {
   display: inline-block;
-  float: left;
   box-sizing: border-box;
-  width: 150px;
-  margin-right: 10px;
+  padding: 10px;
   margin-bottom: 5px;
 }
 .feature__img {
-  position: relative;
-  height: 100px;
   margin-bottom: 5px;
+  position: relative;
+  height: 100%;
 }
 .icon {
   position: absolute;
