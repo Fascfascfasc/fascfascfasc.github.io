@@ -5,7 +5,6 @@
  *
  * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
  */
-
 html.fp-enabled,
 .fp-enabled body {
     margin: 0;
@@ -38,8 +37,7 @@ html.fp-enabled,
     float: left;
 }
 
-.fp-slide,
-.fp-slidesContainer {
+.fp-slide, .fp-slidesContainer {
     height: 100%;
     display: block;
 }
@@ -53,8 +51,7 @@ html.fp-enabled,
     transition: all 0.3s ease-out;
 }
 
-.fp-section.fp-table,
-.fp-slide.fp-table {
+.fp-section.fp-table, .fp-slide.fp-table {
     display: table;
     table-layout:fixed;
     width: 100%;
@@ -131,14 +128,14 @@ html.fp-enabled,
 }
 
 #fp-nav.right {
-    right: 10px;
+    right: 17px;
 }
 
 #fp-nav.left {
-    left: 10px;
+    left: 17px;
 }
 
-.fp-slidesNav {
+.fp-slidesNav{
     position: absolute;
     z-index: 4;
     left: 50%;
@@ -189,7 +186,7 @@ html.fp-enabled,
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
-.fp-slidesNav ul li:hover a.active span {
+.fp-slidesNav ul li:hover a.active span{
     height: 16px;
     width: 16px;
     margin: -9px 0 0 -7px;
@@ -222,7 +219,7 @@ html.fp-enabled,
 }
 
 #fp-nav ul li:hover a span,
-.fp-slidesNav ul li:hover a span {
+.fp-slidesNav ul li:hover a span{
     border: 2px solid #2cb9db;
     background: none;
 }
@@ -262,7 +259,7 @@ html.fp-enabled,
 
 .fp-auto-height.fp-section,
 .fp-auto-height .fp-slide,
-.fp-auto-height .fp-tableCell {
+.fp-auto-height .fp-tableCell{
     height: auto !important;
 }
 
