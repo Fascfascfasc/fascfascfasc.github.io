@@ -1,27 +1,29 @@
+// main: ../less/main.less
 /*  S T A R T  O F  menu.less  */
 
 
 .header__menu {
     width: 600px;
     margin: 0 auto;
-    background-color: #444;
 }
 
-#menu {
+.menu {
     position: relative;
     float: left;
     left: 50%;
-    margin-top: 45px;
+    margin-top: 15px;
     z-index: 70;
 }
 
-#menu li {
+.menu__item {
     position: relative;
     float: left;
     left: -50%;
-    margin-right: 25px;
+    margin-right: 30px;
+    padding-bottom: 2px;
     text-transform: uppercase;
-    .transition (opacity 0.3s);
+    border-bottom: 1px solid transparent;
+    .transition (all 0.3s);
     &.active::before {
         content: '';
         position: absolute;
@@ -35,10 +37,10 @@
         .transition (background-color 0.3s);
     }
     &:not(.active):hover {
-        opacity: 0.6;
-        .transition (opacity 0.3s);
+        border-bottom: 1px solid rgba(0,187,210,0.5);
+        .transition (all 0.3s);
     }
-    & a {
+    & .menu__link {
         display: block;
         color: @main;
         .font_header;
@@ -46,19 +48,19 @@
         .transition (color 0.3s);
     }
 }
-
-#menu li a,
-#menu li.active a {
-    padding: 5px 10px;
+.menu__item:last-child {
+    margin-right: 0px;
 }
-
-#menu li.active a {
+.menu__item .menu__link,
+.menu__item.active .menu__link {
+    // padding: 5px 10px;
+}
+.menu__item.active .menu__link {
     color: @main;
     opacity: 0.6;
     .transition (opacity 0.3s);
 }
-
-#menu li.active a:hover {
+.menu__item.active .menu__link:hover {
     // opacity: 1;
     // .transition (opacity 0.3s);
 }
@@ -67,8 +69,7 @@
     display: none;
     float: right;
     width: 30px;
-    margin-right: 20px;
-    margin-top: 25px;
+    margin-top: 11px;
     padding: 0;
     background-color: transparent;
     border: none;
@@ -78,14 +79,17 @@
         height: 2px;
         background-color: @main;
         margin-bottom: 4px;
-        .transition (margin-bottom 0.3s);
-        .transition (background-color 0.3s);
+        .transition (all 0.3s);
         &:last-child {
             margin-bottom: 0px;
         }
     }
     &:hover {
         cursor: pointer;
+        i {
+            background-color: @white;
+            .transition (all 0.3s);
+        }
     }
     &:focus {
         outline: none;
@@ -104,6 +108,71 @@
     //     .transition (margin 0.4s);
     // }
 }
+.fp-viewing-intro .menu__btn {
+    .opacity (0);
+    .transition (all 0.3s);
+    z-index: -100;
+}
+
+.fp-viewing-clients i {
+    background-color: @white;
+}
+.fp-viewing-clients .menu__item {
+    & .menu__link {
+        color: @white;
+    }
+    &.active::before {
+        background-color: @white;
+    }
+    &:not(.active):hover {
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+}
+
+.fp-viewing-clients i {
+    background-color: @white;
+}
+.fp-viewing-clients .menu__item {
+    & .menu__link {
+        color: @white;
+    }
+    &.active::before {
+        background-color: @white;
+    }
+    &:not(.active):hover {
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+}
+
+.fp-viewing-partners i {
+    background-color: @white;
+}
+.fp-viewing-partners .menu__item {
+    & .menu__link {
+        color: @white;
+    }
+    &.active::before {
+        background-color: @white;
+    }
+    &:not(.active):hover {
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+}
+
+.fp-viewing-contacts i {
+    background-color: @white;
+}
+.fp-viewing-contacts .menu__item {
+    & .menu__link {
+        color: @white;
+    }
+    &.active::before {
+        background-color: @white;
+    }
+    &:not(.active):hover {
+        border-bottom: 1px solid rgba(255,255,255,0.5);
+    }
+}
 
 @media @mobile {
     .header__menu {
@@ -115,17 +184,17 @@
 }
 
 @media @pre-tablet {
-    #menu {
-        margin-top: 35px;
+    .header__menu {
+        width: 400px;
     }
-    #menu li {
-        margin-right: 0px;
+    .menu__item {
+        margin-right: 13px;
     }
 }
 
 @media @tablet {
-    #menu li {
-        margin-right: 10px;
+    .menu__item {
+        margin-right: 25px;
     }
 }
 
