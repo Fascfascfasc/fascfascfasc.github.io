@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1b625bf0-e939-49b6-95a6-2fedb4f042f6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/less/variables&amp;mixins.less" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/menu.less" afterPath="$PROJECT_DIR$/less/menu.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/vendor-mixins.less" afterPath="$PROJECT_DIR$/less/vendor-mixins.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/main.less" afterPath="$PROJECT_DIR$/less/main.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/section_clients.less" afterPath="$PROJECT_DIR$/less/section_clients.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/section_contacts.less" afterPath="$PROJECT_DIR$/less/section_contacts.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/less/section_intro.less" afterPath="$PROJECT_DIR$/less/section_intro.less" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -166,12 +167,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1482402285310</updated>
-      <workItem from="1482402289744" duration="1619000" />
+      <workItem from="1482402289744" duration="2236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1619000" />
+    <option name="totallyTimeSpent" value="2236000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="6" />
