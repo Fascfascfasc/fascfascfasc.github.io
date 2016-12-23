@@ -95,18 +95,6 @@
         outline: none;
         border-style: none;
     }
-    // &:hover .i_top {
-    //     margin-bottom: 6px;
-    //     .transition (margin 0.4s);
-    // }
-    // &:hover .i_center {
-    //     // margin: 6px auto;
-    //     .transition (margin 0.4s);
-    // }
-    // &:hover .i_bottom {
-    //     margin-top: 6px;
-    //     .transition (margin 0.4s);
-    // }
 }
 .fp-viewing-intro .menu__btn {
     .opacity (0);
@@ -114,54 +102,26 @@
     z-index: -100;
 }
 
-.fp-viewing-clients i {
-    background-color: @white;
-}
-.fp-viewing-clients .menu__item {
-    & .menu__link {
-        color: @white;
-    }
-    &.active::before {
+.fp-viewing-clients,
+.fp-viewing-partners {
+    i {
         background-color: @white;
-    }
-    &:not(.active):hover {
-        border-bottom: 1px solid rgba(255,255,255,0.5);
     }
 }
 
-.fp-viewing-clients i {
-    background-color: @white;
-}
-.fp-viewing-clients .menu__item {
-    & .menu__link {
-        color: @white;
-    }
-    &.active::before {
-        background-color: @white;
-    }
-    &:not(.active):hover {
-        border-bottom: 1px solid rgba(255,255,255,0.5);
+.fp-viewing-clients,
+.fp-viewing-partners,
+.fp-viewing-contacts {
+    .menu__btn:hover {
+        i {
+            background-color: @blue;
+            .transition (all 0.3s);
+        }
     }
 }
 
-.fp-viewing-partners i {
-    background-color: @white;
-}
-.fp-viewing-partners .menu__item {
-    & .menu__link {
-        color: @white;
-    }
-    &.active::before {
-        background-color: @white;
-    }
-    &:not(.active):hover {
-        border-bottom: 1px solid rgba(255,255,255,0.5);
-    }
-}
-
-.fp-viewing-contacts i {
-    background-color: @white;
-}
+.fp-viewing-clients .menu__item,
+.fp-viewing-partners .menu__item,
 .fp-viewing-contacts .menu__item {
     & .menu__link {
         color: @white;
@@ -173,6 +133,7 @@
         border-bottom: 1px solid rgba(255,255,255,0.5);
     }
 }
+
 
 @media @mobile {
     .header__menu {

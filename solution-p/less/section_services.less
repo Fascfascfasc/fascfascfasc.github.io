@@ -3,10 +3,16 @@
 
 
 .section_services {
-    min-height: 600px;
+    min-height: 650px;
+}
+.section_services .section__inner {
+    max-width: 700px;
 }
 .section_services .section__header {
-    padding-top: 40px;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 34px;
+    .font_header;
 }
 .section_services .section__desc {
     padding-top: 10px;
@@ -69,15 +75,26 @@
     font-size: 20px;
 }
 
+
+.slide_services .btn {
+    float: right;
+}
+.section_services .section__inner .btn_white {
+    max-width: 280px;
+}
+
 @media @mobile {
     .section_services {
+        .section__header {
+            margin-top: 20px;
+        }
         .service__block {
             width: 50%;
             max-width: 400px;
-            padding-bottom: 15px;
         }
         .services {
             max-width: 400px;
+            padding-bottom: 0;
         }
     }
 }
