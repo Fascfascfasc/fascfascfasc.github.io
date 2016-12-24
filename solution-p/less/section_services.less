@@ -6,7 +6,7 @@
     min-height: 650px;
 }
 .section_services .section__inner {
-    max-width: 700px;
+    max-width: 800px;
 }
 .section_services .section__header {
     margin-top: 50px;
@@ -19,7 +19,6 @@
 }
 
 .services {
-    max-width: 600px;
     margin: 0 auto;
     padding-bottom: 25px;
     overflow: hidden;
@@ -35,13 +34,17 @@
 }
 .service_link:hover {
     color: @main;
-    .transition (all 0.3s);
+    // .transition (all 0.3s);
     .service__img {
         border-color: @main;
         .transition (all 0.3s);
     }
     .icon {
         fill: @main;
+        .transition (all 0.3s);
+    }
+    .service__title::after {
+        background-image: url(../img/arrow_blue.svg);
         .transition (all 0.3s);
     }
 }
@@ -73,6 +76,15 @@
     margin: 0 auto;
     .font_header;
     font-size: 20px;
+    .transition (all 0.1s);
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 11px;
+        margin-left: 10px;
+        background: url(../img/arrow.svg) no-repeat;
+    }
 }
 
 
@@ -81,6 +93,19 @@
 }
 .section_services .section__inner .btn_white {
     max-width: 280px;
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 10px;
+        margin-left: 10px;
+        background: url(../img/arrow.svg) no-repeat;
+    }
+    &:hover {
+        &::after {
+            background-image: url(../img/arrow_blue.svg);
+        }
+    }
 }
 
 @media @mobile {

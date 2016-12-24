@@ -233,7 +233,6 @@ div.wpcf7 img.ajax-loader {
 
 .btns {
     display: inline-block;
-    // display: block;
     margin-top: 10px;
     max-width: 300px;
 }
@@ -261,21 +260,45 @@ div.wpcf7 img.ajax-loader {
 }
 .btn_prev,
 .btn_next {
-    // width: 165px;
     width: 48%;
     margin: 10px auto 0;
-    // margin: 10px;
-    // max-width: 280px;
 }
 .btn_prev {
     margin-left: 0px;
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 10px;
+        margin-right: 10px;
+        background: url(../img/arrow.svg) no-repeat;
+        transform: rotate(180deg);
+    }
+    &:hover {
+        &::before {
+            background-image: url(../img/arrow_blue.svg);
+            transform: rotate(180deg);
+        }
+    }
 }
 .btn_next {
     float: right;
     margin-right: 0px;
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 9px;
+        height: 10px;
+        margin-left: 10px;
+        background: url(../img/arrow.svg) no-repeat;
+    }
+    &:hover {
+        &::after {
+            background-image: url(../img/arrow_blue.svg);
+        }
+    }
 }
 .btn_blue {
-    // float: none;
     border: 1px solid @main;
     background-color: @main;
     &:hover {
@@ -331,13 +354,11 @@ div.wpcf7 img.ajax-loader {
     }
     .section__desc {
         padding-bottom: 20px;
+        max-width: 500px;
     }
     .feature {
         width: 100%;
     }
-    // .slide__btns {
-    //     padding: 0 10px;
-    // }
     .btns {
         display: inline-block;
     }
@@ -348,6 +369,11 @@ div.wpcf7 img.ajax-loader {
     .btn_next {
         width: 48%;
         margin: 10px auto 0;
+    }
+}
+@media @pre-tablet {
+    .section__desc {
+        max-width: 500px;
     }
 }
 

@@ -16,7 +16,7 @@
 .font_main {
     font-family: 'FuturaNewBook', sans-serif;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 24px;
     text-align: center;
     -webkit-hyphens: auto;
     -epub-hyphens: auto;
@@ -24,6 +24,9 @@
     -ms-hyphens: auto;
     hyphens: auto;
     word-wrap: break-word;
+    @mobile {
+        line-height: 20px;
+    }
 }
 .font_header {
     font-family: 'FuturaDemiC', sans-serif;
