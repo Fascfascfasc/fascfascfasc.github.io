@@ -612,7 +612,7 @@ div.wpcf7 img.ajax-loader {
   visibility: visible;
   position: relative;
   float: right;
-  width: 110px;
+  width: 160px;
   margin-top: 3px;
   z-index: 100;
   -webkit-opacity: 1;
@@ -624,6 +624,7 @@ div.wpcf7 img.ajax-loader {
   -ms-transition: all 1s;
   -o-transition: all 1s;
   transition: all 1s;
+  overflow: hidden;
 }
 .fp-viewing-intro .header_gradient,
 .fp-viewing-intro .logo__img_header,
@@ -667,6 +668,16 @@ div.wpcf7 img.ajax-loader {
 @media only screen and (min-width: 700px) and (max-width: 929px) {
   .logo__img_header {
     width: 87px;
+  }
+  .btn_header {
+    width: 100px;
+    line-height: 23px;
+  }
+}
+@media only screen and (min-width: 930px) and (max-width: 1279px) {
+  .btn_header {
+    width: 100px;
+    line-height: 23px;
   }
 }
 /*  E N D  O F  header.less  */
