@@ -3022,6 +3022,11 @@ input[type='reset'].styler {
   -moz-appearance: none;
   appearance: none;
 }
+input[type='submit'] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 button.styler::-moz-focus-inner,
 input[type='button'].styler::-moz-focus-inner,
 input[type='submit'].styler::-moz-focus-inner,
