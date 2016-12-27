@@ -1438,10 +1438,10 @@ div.wpcf7 img.ajax-loader {
   color: #ffffff;
   text-align: left;
   background-color: #2cb9db;
-  -webkit-opacity: 0.8;
-  -moz-opacity: 0.8;
-  opacity: 0.8;
-  filter: alpha(opacity=80);
+  -webkit-opacity: 0.9;
+  -moz-opacity: 0.9;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
   z-index: 100;
 }
 .contacts__block .section__header {
