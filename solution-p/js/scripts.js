@@ -61,10 +61,6 @@ $(function() {
 		}
 	});
 
-
-
-    //
-    //
     // $('select').styler({
     //     onSelectOpened: function() {
     //         $(this).find('.jq-selectbox__dropdown').jScrollPane({
@@ -72,7 +68,7 @@ $(function() {
     //         });
     //     }
     // });
-    //
+
     // $('input[type="tel"]').inputmask({
 	// 	mask: '+7 (999) 999-99-99',
 	// 	placeholder: ' ',
