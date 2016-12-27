@@ -27,6 +27,7 @@
 </head>
 <body>
 <div class="wrapper">
+	<div class="loader"></div>
 <!-- Хедер -->
 	<header class="header">
 		<div class="header_gradient"></div>
@@ -611,6 +612,8 @@
 <script src="./js/jquery.min.js"></script>
 <script src="./js/scripts.js"></script>
 <script src="./js/jquery.fullPage.js"></script>
+<script src="./plugins/contact-form-7/includes/js/jquery.form.js"></script>
+<script src="./plugins/contact-form-7/includes/js/scripts.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAQ0PT-P1EWEpIGfPeDHhgjfOWWe47I56g"></script>
 <script>
 	function initialize() {
@@ -629,7 +632,7 @@
 			map: map,
 			position: myLatLng,
 			icon: './img/map-marker.svg',
-			title: 'Solution P<br>Москва, Багратионовский проезд д. 7, +7 (495) 540-47-97'
+			title: 'Москва, Багратионовский проезд д. 7, +7 (495) 540-47-97'
 		});
 	}
 	google.maps.event.addDomListener(window, 'load', initialize);
