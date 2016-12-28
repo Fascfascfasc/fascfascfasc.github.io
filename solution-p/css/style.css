@@ -188,7 +188,7 @@ textarea {
   margin: 0 50%;
   width: 1px;
   height: 100%;
-  z-index: 100;
+  z-index: 10000;
   background-color: red;
 }
 /*  E N D  O F  variables.less  */
@@ -285,7 +285,9 @@ h2 {
 }
 .popup-block {
   display: inline-block;
+  width: 420px;
   color: #ffffff;
+  text-align: left;
 }
 .button {
   line-height: 40px !important;
@@ -1756,12 +1758,12 @@ div.wpcf7 img.ajax-loader {
 }
 .contacts__item {
   display: inline-block;
-  padding: 0px 20px;
+  padding-left: 35px;
   position: relative;
   font-family: 'Geometria-Regular', sans-serif;
 }
 .contacts__item_phone {
-  margin-right: 30px;
+  padding-right: 52px;
 }
 .contacts__item_phone::after {
   position: absolute;
@@ -1769,6 +1771,7 @@ div.wpcf7 img.ajax-loader {
   width: 28px;
   height: 28px;
   background: url('../img/icon-phone_blue.svg') no-repeat;
+  background-size: contain;
   top: 17px;
   left: 0;
 }
@@ -1777,12 +1780,15 @@ div.wpcf7 img.ajax-loader {
   height: 45px;
   line-height: 45px;
   border-right: 1px solid #00bbd2;
-  margin-right: -3px;
 }
 .contacts__item_phone-popup::after {
   background: url('../img/icon-phone_blue.svg') no-repeat;
+  background-size: contain;
   top: 9px;
   left: -10px;
+}
+.contacts__item_mail {
+  margin-left: 50px;
 }
 .contacts__item_mail a {
   color: #fff;
@@ -1793,6 +1799,7 @@ div.wpcf7 img.ajax-loader {
   width: 28px;
   height: 28px;
   background: url('../img/icon-mail_blue.svg') no-repeat;
+  background-size: contain;
   top: 17px;
   left: 0;
 }
@@ -1804,12 +1811,12 @@ div.wpcf7 img.ajax-loader {
 }
 .contacts__item_mail-popup::after {
   background: url('../img/icon-mail_blue.svg') no-repeat;
+  background-size: contain;
   top: 9px;
   left: -10px;
 }
 .popup__social {
-  margin-top: 50px !important;
-  padding-left: 20px !important;
+  margin-top: 50px;
 }
 .social {
   margin: 0;
@@ -1819,7 +1826,7 @@ div.wpcf7 img.ajax-loader {
   display: inline-block;
   width: 24px;
   height: 24px;
-  margin-right: 16px;
+  margin: 50px 10px 0px;
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
@@ -1889,7 +1896,6 @@ div.wpcf7 img.ajax-loader {
   }
 }
 /*  E N D  O F  popup_contacts.less  */
-/*  S T A R T  O F  index.less  */
 /*  S T A R T  O F  index.less  */
 .navigation {
   position: fixed;
@@ -2051,7 +2057,6 @@ div.wpcf7 img.ajax-loader {
   position: relative;
 }
 .blocks {
-  max-width: 320px;
   min-width: 260px;
   margin-left: auto;
   margin-right: auto;
@@ -2875,6 +2880,34 @@ div.wpcf7 img.ajax-loader {
   top: -39px;
   left: -1px;
 }
+.input ::-webkit-input-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
+.input ::-moz-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
+/* Firefox 19+ */
+.input :-moz-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
+/* Firefox 18- */
+.input :-ms-input-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
+textarea::-webkit-input-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
+textarea::-moz-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
+/* Firefox 19+ */
+textarea:-moz-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
+/* Firefox 18- */
+textarea:-ms-input-placeholder {
+  color: rgba(0, 187, 210, 0.8);
+}
 .textarea .wpcf7-not-valid-tip:before {
   position: absolute;
   content: '';
@@ -2885,9 +2918,10 @@ div.wpcf7 img.ajax-loader {
   left: -1px;
 }
 .input {
-  width: 300px;
+  width: 420px;
   height: 40px;
   border: 1px solid rgba(0, 187, 210, 0.4);
+  display: inline-block;
   margin: 10px 0;
 }
 .input input {
@@ -2915,7 +2949,7 @@ div.wpcf7 img.ajax-loader {
 }
 .textarea {
   display: inline-block;
-  width: 300px;
+  width: 420px;
   height: 76px;
   margin: 10px 0;
   overflow: hidden;

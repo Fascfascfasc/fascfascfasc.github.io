@@ -174,12 +174,12 @@
 }
 .contacts__item {
     display: inline-block;
-    padding: 0px 20px;
+    padding-left: 35px;
     position: relative;
     font-family: 'Geometria-Regular', sans-serif
 }
 .contacts__item_phone {
-    margin-right: 30px
+    padding-right: 52px;
 }
 .contacts__item_phone::after {
     position: absolute;
@@ -187,24 +187,25 @@
     width: 28px;
     height: 28px;
     background: url('../img/icon-phone_blue.svg') no-repeat;
+    background-size: contain;
     top: 17px;
     left: 0
 }
 .contacts__item_phone-popup {
-    // padding-right: 50px;
     font: 21px 'FuturaDemiC-Regular', sans-serif;
     height: 45px;
     line-height: 45px;
     border-right: 1px solid #00bbd2;
-    margin-right: -3px;
+    // padding-right: 50px;
 }
 .contacts__item_phone-popup::after {
     background: url('../img/icon-phone_blue.svg') no-repeat;
+    background-size: contain;
     top: 9px;
     left: -10px
 }
 .contacts__item_mail {
-    // margin-left: 30px
+    margin-left: 50px;
 }
 .contacts__item_mail a {
     color: #fff
@@ -215,6 +216,7 @@
     width: 28px;
     height: 28px;
     background: url('../img/icon-mail_blue.svg') no-repeat;
+    background-size: contain;
     top: 17px;
     left: 0
 }
@@ -227,13 +229,14 @@
 }
 .contacts__item_mail-popup::after {
     background: url('../img/icon-mail_blue.svg') no-repeat;
+    background-size: contain;
     top: 9px;
     left: -10px;
 }
 
 .popup__social {
-    margin-top: 50px !important;
-    padding-left: 20px !important;
+    margin-top: 50px;
+    // padding-left: 20px !important;
 }
 .social {
     margin: 0;
@@ -243,7 +246,7 @@
     display: inline-block;
     width: 24px;
     height: 24px;
-    margin-right: 16px;
+    margin: 50px 10px 0px;
     position: relative;
     background-size: contain;
     background-repeat: no-repeat;
