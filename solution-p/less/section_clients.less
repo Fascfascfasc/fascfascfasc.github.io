@@ -22,9 +22,7 @@
     box-sizing: border-box;
     width: 32.333%;
     max-width: 240px;
-    margin: 0 20px;
-    margin-bottom: 5%;
-    padding: 5px;
+    margin: 0 20px 5% 20px;
 }
 .client__img {
     position: relative;
@@ -54,10 +52,10 @@
     }
 }
 
-.img_white,
-.img_color {
+.section_clients .img_white,
+.section_clients .img_color {
     width: 100%;
-    max-width: 200px;
+    // max-width: 200px;
 }
 
 @media @mobile {
@@ -77,6 +75,13 @@
     }
 }
 @media @pre-tablet {
+    .section_clients {
+        .client {
+            margin-bottom: 10px;
+        }
+    }
+}
+@media @tablet {
     .section_clients {
         .client {
             margin-bottom: 10px;
