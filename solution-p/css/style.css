@@ -1473,6 +1473,10 @@ div.wpcf7 img.ajax-loader {
 .address::before {
   background-image: url(../img/icon_map.svg);
 }
+.telephone {
+  color: inherit;
+  text-decoration: none;
+}
 .telephone::before {
   background-image: url(../img/icon_phone.svg);
 }
