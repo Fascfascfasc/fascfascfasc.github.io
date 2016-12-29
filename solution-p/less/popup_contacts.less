@@ -327,8 +327,25 @@
     .popup_contacts .contacts__inner {
         padding: 0 20px;
     }
+    .popup_contacts .popup__inner {
+        margin: 20px;
+        padding: 0;
+    }
     .popup_contacts .popup_header {
-        margin-bottom: 30px;
+        padding-top: 0px;
+        margin-bottom: 0px;
+    }
+    .popup__contacts {
+        margin-top: 25px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contacts__item_phone {
+        padding-right: 0px;
+    }
+    .contacts__item_mail {
+        margin-left: 0px;
     }
     .contacts__item_phone-popup {
         border-right: 0px solid #00bbd2;
@@ -340,7 +357,22 @@
     .switch-title_disable {
         display: none;
     }
+    .popup__social {
+        margin-bottom: 20px;
+    }
+    .social__item {
+        margin-top: 20px;
+    }
 }
 
+@media @pre-tablet {
+    .popup_contacts .popup_header {
+        padding-top: 0px;
+        margin-bottom: 30px;
+    }
+    .popup__contacts {
+        margin-top: 50px;
+    }
+}
 
 /*  E N D  O F  popup_contacts.less  */

@@ -550,8 +550,7 @@ div.wpcf7 img.ajax-loader {
     margin: 10px auto 0;
   }
   .popup-block {
-    width: 100%;
-    padding-left: 10px;
+    width: 280px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 929px) {
@@ -1884,8 +1883,25 @@ div.wpcf7 img.ajax-loader {
   .popup_contacts .contacts__inner {
     padding: 0 20px;
   }
+  .popup_contacts .popup__inner {
+    margin: 20px;
+    padding: 0;
+  }
   .popup_contacts .popup_header {
-    margin-bottom: 30px;
+    padding-top: 0px;
+    margin-bottom: 0px;
+  }
+  .popup__contacts {
+    margin-top: 25px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contacts__item_phone {
+    padding-right: 0px;
+  }
+  .contacts__item_mail {
+    margin-left: 0px;
   }
   .contacts__item_phone-popup {
     border-right: 0px solid #00bbd2;
@@ -1896,6 +1912,21 @@ div.wpcf7 img.ajax-loader {
   .switch,
   .switch-title_disable {
     display: none;
+  }
+  .popup__social {
+    margin-bottom: 20px;
+  }
+  .social__item {
+    margin-top: 20px;
+  }
+}
+@media only screen and (min-width: 700px) and (max-width: 929px) {
+  .popup_contacts .popup_header {
+    padding-top: 0px;
+    margin-bottom: 30px;
+  }
+  .popup__contacts {
+    margin-top: 50px;
   }
 }
 /*  E N D  O F  popup_contacts.less  */
@@ -2666,7 +2697,6 @@ div.wpcf7 img.ajax-loader {
 }
 .jq-selectbox__select {
   height: 40px;
-  width: 420px;
   padding: 0 45px 0 20px;
   border: 1px solid rgba(0, 187, 210, 0.4);
   color: rgba(0, 187, 210, 0.8);
@@ -3099,6 +3129,9 @@ input[type='submit'].styler[disabled] {
   .input {
     width: 280px;
   }
+  .input input {
+    width: 260px;
+  }
   .textarea {
     width: 280px;
   }
@@ -3107,6 +3140,9 @@ input[type='submit'].styler[disabled] {
   }
   .jq-selectbox__select {
     width: 215px;
+  }
+  .textarea textarea {
+    width: 240px;
   }
 }
 /*  E N D  O F  formstyler.less  */
