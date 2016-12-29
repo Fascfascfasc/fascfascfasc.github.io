@@ -1473,8 +1473,8 @@ div.wpcf7 img.ajax-loader {
 .address::before {
   background-image: url(../img/icon_map.svg);
 }
-.telephone {
-  color: inherit;
+.telephone a[href^="tel"] {
+  color: #ffffff;
   text-decoration: none;
 }
 .telephone::before {
@@ -1883,6 +1883,10 @@ div.wpcf7 img.ajax-loader {
   width: 30px;
   height: 30px;
   background-image: url('../img/icon-tw_blue.svg');
+}
+.contacts__item_phone a[href^="tel"] {
+  color: #ffffff;
+  text-decoration: none;
 }
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   .popup_contacts .contacts__inner {
