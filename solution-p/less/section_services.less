@@ -4,9 +4,10 @@
 
 
 .section_services {
-    min-height: 660px;
+    min-height: 640px;
 }
 .section_services .section__header {
+    margin-top: -50px;
     padding: 20px;
     font-size: 34px;
     .font_header;
@@ -21,7 +22,7 @@
 }
 .services {
     margin: 0 auto;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-bottom: 25px;
     overflow: hidden;
 }
@@ -36,8 +37,10 @@
 }
 .service_link:hover {
     color: @main;
+    // .transition (all 0.3s);
     .service__img {
         border-color: @main;
+        .transition (all 0.3s);
     }
     .icon {
         fill: @main;
@@ -111,7 +114,7 @@
 @media @mobile {
     .section_services {
         .section__header {
-            margin-top: 100px;
+            margin-top: 20px;
             padding: 0;
         }
         .section__desc {
@@ -120,7 +123,6 @@
         .service__block {
             width: 50%;
             max-width: 400px;
-            margin-bottom: 40px; // удалить
         }
         .services {
             max-width: 400px;
@@ -132,27 +134,26 @@
         }
         .btn_white {
             max-width: 360px;
-            margin-bottom: 60px; // удалить
         }
     }
 }
 @media @pre-tablet {
     .section_services {
         .section__header {
-            margin-top: 100px;
+            margin-top: -10px;
         }
         .services {
             margin-bottom: 20px;
         }
         .btn_white {
-            // max-width: 360px;
+            max-width: 360px;
         }
     }
 }
 @media @tablet {
     .section_services {
         .section__header {
-            margin-top: 100px;
+            margin-top: -10px;
         }
         .services {
             margin-bottom: 20px;

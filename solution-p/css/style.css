@@ -227,7 +227,6 @@ h2 {
   margin: 0 auto;
   padding: 0 40px;
   text-align: center;
-  overflow: hidden;
 }
 .section__header {
   padding-top: 30px;
@@ -237,8 +236,8 @@ h2 {
 }
 .section__desc {
   margin: 0 auto;
-  padding: 20px 3px 60px;
-  max-width: 610px;
+  padding: 20px 3px 40px;
+  max-width: 600px;
   font-family: 'FuturaNewBook', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -570,6 +569,13 @@ div.wpcf7 img.ajax-loader {
   .btns {
     display: inline-block;
     max-width: 360px;
+  }
+  .btn {
+    margin: 0;
+  }
+  .btn_blue,
+  .btn_white {
+    width: 100%;
   }
   .btn_prev,
   .btn_next {
@@ -918,7 +924,6 @@ div.wpcf7 img.ajax-loader {
 .section_intro {
   min-height: 550px;
   color: #000000;
-  color: red;
 }
 .logo__img {
   width: 180px;
@@ -988,9 +993,10 @@ div.wpcf7 img.ajax-loader {
 /*  E N D  O F  section_intro.less  */
 /*  S T A R T  O F  section_services.less  */
 .section_services {
-  min-height: 660px;
+  min-height: 640px;
 }
 .section_services .section__header {
+  margin-top: -50px;
   padding: 20px;
   font-size: 34px;
   font-family: 'FuturaDemiC', sans-serif;
@@ -1005,7 +1011,7 @@ div.wpcf7 img.ajax-loader {
 }
 .services {
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   padding-bottom: 25px;
   overflow: hidden;
 }
@@ -1023,6 +1029,11 @@ div.wpcf7 img.ajax-loader {
 }
 .service_link:hover .service__img {
   border-color: #2cb9db;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .service_link:hover .icon {
   fill: #2cb9db;
@@ -1106,7 +1117,7 @@ div.wpcf7 img.ajax-loader {
 }
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   .section_services .section__header {
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 0;
   }
   .section_services .section__desc {
@@ -1115,7 +1126,6 @@ div.wpcf7 img.ajax-loader {
   .section_services .service__block {
     width: 50%;
     max-width: 400px;
-    margin-bottom: 40px;
   }
   .section_services .services {
     max-width: 400px;
@@ -1127,20 +1137,22 @@ div.wpcf7 img.ajax-loader {
   }
   .section_services .btn_white {
     max-width: 360px;
-    margin-bottom: 60px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 929px) {
   .section_services .section__header {
-    margin-top: 100px;
+    margin-top: -10px;
   }
   .section_services .services {
     margin-bottom: 20px;
   }
+  .section_services .btn_white {
+    max-width: 360px;
+  }
 }
 @media only screen and (min-width: 930px) and (max-width: 1279px) {
   .section_services .section__header {
-    margin-top: 100px;
+    margin-top: -10px;
   }
   .section_services .services {
     margin-bottom: 20px;
@@ -1278,7 +1290,7 @@ div.wpcf7 img.ajax-loader {
 /*  S T A R T  O F  section_clients.less  */
 .section_clients {
   background-color: #4dbcd2;
-  min-height: 680px;
+  min-height: 600px;
 }
 .section_clients .section__header {
   display: none;
@@ -1368,7 +1380,6 @@ div.wpcf7 img.ajax-loader {
   .section_clients .clients {
     max-width: 450px;
     margin-top: 20px;
-    margin-bottom: 20px;
     padding: 0;
   }
   .section_clients .client {
@@ -1617,9 +1628,6 @@ div.wpcf7 img.ajax-loader {
 .popup__menu-item .menu__link:nth-last-child(1) {
   margin-bottom: 20px;
 }
-.popup_menu .btn {
-  display: inline-block;
-}
 .popup_menu .btn_close {
   position: absolute;
   right: 20px;
@@ -1635,9 +1643,6 @@ div.wpcf7 img.ajax-loader {
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   .popup_menu .btn {
     float: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
     max-width: 280px;
   }
   .popup_menu .btn_blue {
