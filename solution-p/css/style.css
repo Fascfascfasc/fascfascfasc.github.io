@@ -237,7 +237,7 @@ h2 {
 .section__desc {
   margin: 0 auto;
   padding: 20px 3px 40px;
-  max-width: 600px;
+  max-width: 610px;
   font-family: 'FuturaNewBook', sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -993,10 +993,9 @@ div.wpcf7 img.ajax-loader {
 /*  E N D  O F  section_intro.less  */
 /*  S T A R T  O F  section_services.less  */
 .section_services {
-  min-height: 640px;
+  min-height: 600px;
 }
 .section_services .section__header {
-  margin-top: -50px;
   padding: 20px;
   font-size: 34px;
   font-family: 'FuturaDemiC', sans-serif;
@@ -1117,7 +1116,7 @@ div.wpcf7 img.ajax-loader {
 }
 @media only screen and (min-width: 320px) and (max-width: 699px) {
   .section_services .section__header {
-    margin-top: 20px;
+    margin-top: 80px;
     padding: 0;
   }
   .section_services .section__desc {
@@ -1137,6 +1136,7 @@ div.wpcf7 img.ajax-loader {
   }
   .section_services .btn_white {
     max-width: 360px;
+    margin-bottom: 20px;
   }
 }
 @media only screen and (min-width: 700px) and (max-width: 929px) {
